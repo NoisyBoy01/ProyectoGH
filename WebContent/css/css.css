@@ -1,0 +1,71 @@
+/*  CSS del proyecto  */
+
+/******* Body *********/
+
+/****** Header ********/
+
+/******* Main *********/
+
+/****** Footer ********/
+
+
+/****** Index contSlider ********/
+#contSlider{
+	display:block;
+	background-color:gray;
+	max-height:800px;
+	 display: flex;   
+    flex-flow:row nowrap;
+    align-content:space-around;
+}
+#menuSlider{
+ 	display: flex;   
+ 	flex-wrap:wrap;
+    /*flex-flow:column wrap;*/
+	align-content:space-around;
+	justify-content:space-around;
+}
+
+.navSlider{
+	background-color:green;
+	width:300px;
+	height:200px;
+	border:2px solid;
+	display:flex;    
+    align-items:center;
+    justify-content:space-around;
+}
+
+.navSlider > h1	{
+	
+}
+
+#datosSlider{
+	 display: flex;   
+    flex-flow:column-reverse nowrap;
+}
+/****** RESPONSIV ********/
+/****** Media queries ********
+*
+*@media(max-width:800px)
+*
+*body{
+*
+}
+*
+*aside{
+
+}
+*
+*
+*main{
+
+}
+*
+*
+*@media(max-width:500px)
+*
+*
+*/
+
+

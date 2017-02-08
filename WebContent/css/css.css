@@ -3,7 +3,24 @@
 /******* Body *********/
 
 /****** Header ********/
+header{
+		background-color:red;
+		text-align:center;
+}
 
+
+header > h1{
+		padding:15px 0px;
+	
+}
+
+nav ul li{
+		padding:10px;
+		width: 500px;
+		border:2px solid blue;
+		
+}
+	
 
 /******* Main *********/
 
@@ -12,6 +29,7 @@
 
 /****** Index ********/
 #menuSlider{
+	
 	
 }
 

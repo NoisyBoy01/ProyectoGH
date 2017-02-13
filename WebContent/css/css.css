@@ -3,6 +3,11 @@
 /******* Body *********/
 
 /****** Header ********/
+
+*{box-sizing:border-box} /*Para que sea fijo
+ * el margen ejemplo 600px y no mas.
+ */
+
 header{
 		background-color:red;
 		text-align:center;
@@ -10,18 +15,98 @@ header{
 
 
 header > h1{
-		padding:15px 0px;
-	
+		padding:5px 0px;
+
+}
+
+	/*Menu DropDown */
+nav{
+		background-color:blue;
+		padding:0;/*se necesita si no
+		 * se va a un lado las cosas
+		 */
+		
+		
+}
+
+nav ul{
+		
+		padding:0; /*si quitamos eso aparece lo del
+		 *  background rosa apareciendo un cuadrado en index
+		 * 
+		 */
+		list-style-type:none;
+		text-align:center;
+		
+}
+
+nav>ul{
+		width:600px;
+		margin:auto;/*se va el index git etc hacia un lado si lo quitas */
+		background-color:pink;
+		
 }
 
 nav ul li{
-		padding:10px;
-		width: 500px;
-		border:2px solid blue;
+		display:table-cell;
+		width:150px; /*se solapa indext etc junto en la izquierda
+		 * 
+		 */
+		position:relative;
+		padding:0px;
+		/*border:2px solid blue;*/
 		
 }
-	
 
+nav ul li a{
+		display:block;
+		color:grey;/*color de la letra de la lista */
+		background-color:orange;
+		line-height:50px;
+		text-decoration:none;/*con esto activado hace que no  se ponga ninguna raya debajo de las palabras
+		 * 
+		 */
+		
+	
+	
+}
+nav ul li a:hover{
+	color:black;/*color que se pone cuando pones el raton encima de las columnas
+	 * 
+	 */
+	background-color:yellow;
+	font-weight:bold;
+	
+}
+
+nav ul li ul{
+		position:absolute;/*esto hace que no aparezca lo del rosa pero cuando abres las columnas
+		 * 
+		 */
+		overflow:hidden;/*hace  aparecer y desaparecer las tablas
+		 * 
+		 */
+		max-height:0px;/*lo mismo que lo de overflow */
+		box-shadow:10px 10px 15px #888888;
+		transition:max-height 1s; 
+		
+}
+
+nav ul li ul li a{
+		background-color:#20f2a9;
+}
+
+nav ul li:hover ul{
+	
+	max-height:300px; /*esto hace que aparezca el menu osea la lista
+	 * 
+	 */
+}
+nav ul li ul li{
+	display:block; /*los dos datos que hay sin eso se pondria uno al lado del otro en la lista
+	 * 
+	 */
+}
 /******* Main *********/
 
 /****** Footer ********/

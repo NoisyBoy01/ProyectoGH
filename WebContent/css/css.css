@@ -7,7 +7,12 @@
 *{box-sizing:border-box} /*Para que sea fijo
  * el margen ejemplo 600px y no mas.
  */
-
+body{
+	font-family:sans;/*cambiar el tipo de letra en este caso se aplicaria a toda la pagina porque esta en el body
+	 * 
+	 */
+	
+}
 header{
 		background-color:red;
 		text-align:center;
@@ -16,6 +21,7 @@ header{
 
 header > h1{
 		padding:5px 0px;
+		font-family:serif;/*tipo de letra del header en el h1 */
 
 }
 
@@ -93,7 +99,7 @@ nav ul li ul{
 }
 
 nav ul li ul li a{
-		background-color:#20f2a9;
+		background-color:#20f2a9; /*la caja  tiene el mismo color que donde esta index etc*/
 }
 
 nav ul li:hover ul{

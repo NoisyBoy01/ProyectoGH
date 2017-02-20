@@ -8,7 +8,8 @@
  * el margen ejemplo 600px y no mas.
  */
 body{
-	font-family:sans;/*cambiar el tipo de letra en este caso se aplicaria a toda la pagina porque esta en el body
+	font-family:sans;/*poner tipo de letra BARRIO !cambiar el tipo de letra en este caso se aplicaria a toda la pagina porque esta en el body 
+	 * 
 	 * 
 	 */
 	
@@ -34,6 +35,9 @@ nav{
 		
 		
 }
+
+
+
 
 nav ul{
 		
@@ -64,7 +68,7 @@ nav ul li{
 		
 }
 
-nav ul li a{
+nav ul li a {
 		display:block;
 		color:grey;/*color de la letra de la lista */
 		background-color:orange;
@@ -84,7 +88,22 @@ nav ul li a:hover{
 	font-weight:bold;
 	
 }
+nav ul li img{
+		width:40px;
+		height:40px;
+		position:absolute;
+		top:-50px;
+		left:55px;
+		display:none;
+}
 
+nav ul li img.activa{
+		display:inline;
+}
+
+nav ul li a:hover img{
+		display:inline;
+}
 nav ul li ul{
 		position:absolute;/*esto hace que no aparezca lo del rosa pero cuando abres las columnas
 		 * 
@@ -157,5 +176,17 @@ nav ul li ul li{
 *
 *
 */
+
+
+/*TIPOS DE LETRAS ETC  */
+
+/*font-family: tipo de letra, mejor ponerlo por si el tipo de letra no tiene el serif o el times times, serif  */
+
+/*font-size: TAMAÑO DE LETRA! EJEMPLO  1.5em; */  
+
+
+
+
+
 
 

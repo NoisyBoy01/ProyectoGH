@@ -15,23 +15,43 @@ body{
 	
 }
 header{
-		background-color:red;
-		text-align:center;
+		/*LO PONGO DIRECTAMENTE EN EL HEADER>H1 */
+		/*text-align:left;*/
+	
+	background: rgba(117,137,12,1);
+	background: -moz-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(117,137,12,1)), color-stop(100%, rgba(164,179,87,1)));
+	background: -webkit-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	background: -o-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	background: -ms-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	background: linear-gradient(to bottom, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75890c', endColorstr='#a4b357', GradientType=0 );
 }
 
 
 header > h1{
 		padding:5px 0px;
 		font-family:serif;/*tipo de letra del header en el h1 */
-
+		text-align:center;
 }
 
+
+nav > h2{
+	font-family:Barrio,cursive;
+	text-align:left;
+	position: fixed;
+	padding: 0px 15px;
+	
+	
+}
 	/*Menu DropDown */
 nav{
-		background-color:blue;
+		
 		padding:0;/*se necesita si no
 		 * se va a un lado las cosas
 		 */
+		 
+	
 		
 		
 }
@@ -47,13 +67,16 @@ nav ul{
 		 */
 		list-style-type:none;
 		text-align:center;
+		/*background-color:#e73827; /*ROJO */
+		box-shadow: 0px 0px 10px 0px black;
 		
 }
 
-nav>ul{
+
+nav > ul{
 		width:600px;
 		margin:auto;/*se va el index git etc hacia un lado si lo quitas */
-		background-color:pink;
+		/*background-color:#207ce5; /*AZUL */
 		
 }
 
@@ -70,8 +93,8 @@ nav ul li{
 
 nav ul li a {
 		display:block;
-		color:grey;/*color de la letra de la lista */
-		background-color:orange;
+		
+		
 		line-height:50px;
 		text-decoration:none;/*con esto activado hace que no  se ponga ninguna raya debajo de las palabras
 		 * 
@@ -81,10 +104,8 @@ nav ul li a {
 	
 }
 nav ul li a:hover{
-	color:black;/*color que se pone cuando pones el raton encima de las columnas
-	 * 
-	 */
-	background-color:yellow;
+	
+	background-color:#e73827;
 	font-weight:bold;
 	
 }
@@ -99,6 +120,7 @@ nav ul li img{
 
 nav ul li img.activa{
 		display:inline;
+		
 }
 
 nav ul li a:hover img{
@@ -118,7 +140,7 @@ nav ul li ul{
 }
 
 nav ul li ul li a{
-		background-color:#20f2a9; /*la caja  tiene el mismo color que donde esta index etc*/
+		
 }
 
 nav ul li:hover ul{
@@ -131,6 +153,7 @@ nav ul li ul li{
 	display:block; /*los dos datos que hay sin eso se pondria uno al lado del otro en la lista
 	 * 
 	 */
+	 background-color:grey;
 }
 /******* Main *********/
 

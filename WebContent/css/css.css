@@ -12,9 +12,11 @@ body{
 	 * 
 	 * 
 	 */
+	 margin:0px;
 	
 }
 header{
+
 	padding:70px 0px 0px 0px;
 		/*LO PONGO DIRECTAMENTE EN EL HEADER>H1 */
 		/*text-align:left;*/
@@ -42,6 +44,8 @@ nav > h1{
 	text-align:left;
 	position: fixed;
 	padding: 0px 15px;
+	top:-10px;
+	
 	
 	
 }
@@ -55,6 +59,10 @@ nav{
 	
 		
 		
+}
+
+#Logo{
+	width:100px;
 }
 
 .clear{
@@ -185,6 +193,13 @@ nav ul li ul li{
  */
 
 @media screen and (max-width:1200px){
+	
+	
+header{
+		padding:10px 0px 0px 0px;
+}
+	
+	
 	nav > h1{
 
 	position: relative;
@@ -208,6 +223,7 @@ nav ul li a:hover img{
 
 nav ul {
 	text-align:left;
+	width:100%;
 }
 	
 }

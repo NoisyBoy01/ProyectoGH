@@ -1,0 +1,183 @@
+/*CSS del proyecto  */
+
+/******* Body *********/
+
+/****** Header ********/
+
+/******* Main *********/
+
+
+
+
+
+
+/*************************************************************************INDICE---ECLIPSE*******************************************************************************/
+
+#indice ul{
+list-style:none;
+margin:0px;
+padding: 0px 0px;
+ }
+
+#indice{
+background: #d9d9d9;
+display:table-cell;
+/*width:290px;*/
+overflow:hidden;
+text-align:left
+
+
+}
+
+#indice ul li a{
+color:#6666ff;
+text-decoration:none;
+margin:0px;
+white-space:nowrap;
+font-size:0.95em;
+
+
+}
+/**************************************************************************************************************************************************************************/
+/****************************************************************************FIGURAS-IMG***********************************************************************************/
+figure {
+width: 380px;
+height: 360px;
+text-align: center;
+margin:20px 0px;
+border: 1px solid black;
+background-color: white;
+}
+
+figure img{
+height: 90%;
+display: block;
+margin: auto;
+padding: 25px;
+}
+
+figure figcaption {
+border-top: 1px solid black;
+background-color: #dddddd;
+height: 10%;
+padding:3px;
+}
+
+figure, img, figcaption{
+box-sizing:border-box;
+}
+
+/***********************************************************************************************************************************************************************/
+
+
+/***************************************************************FUENTES********************************************/
+
+h1{
+color:blue;
+/*font-family:arial, sans-serif;  ****** te pone primero arial y si no encuentra arial******/
+font-size:10em;
+font-family: 'VT323', monospace;
+}
+
+
+/***********************************************************************************************************************************************************************/
+
+
+/******************************************************************************FOOTER***********************************************************************************/
+
+footer {
+
+text-align:center;
+background-color: white;
+	/*position:fixed;*/
+bottom: 0;
+	width: 100%;
+	padding:20px 0px;
+	color: black;
+
+	 }
+
+	footer a:hover{
+	text-decoration:none;
+	}
+footer a{
+text-decoration:none;
+color:black;
+}
+/***********************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************ROMMEL*******************************************
+
+
+/****** Index contSlider ********/
+#contSlider{
+	display:block;
+	background-color:gray;
+	max-height:800px;
+	 display: flex;
+    flex-flow:row nowrap;
+    align-content:space-around;
+}
+#menuSlider{
+ 	display: flex;
+ 	flex-wrap:wrap;
+    /*flex-flow:column wrap;*/
+	align-content:space-around;
+	justify-content:space-around;
+}
+
+.navSlider{
+	background-color:green;
+	width:300px;
+	height:200px;
+	border:2px solid;
+	display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.navSlider > h1	{
+
+}
+
+#datosSlider{
+	 display: flex;
+    flex-flow:column-reverse nowrap;
+}
+/****** RESPONSIV ********/
+/****** Media queries ********
+*
+*@media(max-width:800px)
+*
+*body{
+*
+}
+*
+*aside{
+
+}
+*
+*
+*main{
+
+}
+*
+*
+*@media(max-width:500px)
+*
+*
+*/

@@ -1,12 +1,175 @@
+/*  CSS del proyecto  */
+
+/******* Body *********/
+
+/****** Header ********/
+
+*{box-sizing:border-box} /*Para que sea fijo
+ * el margen ejemplo 600px y no mas.
+ */
 body{
-  margin: 0px;
+	font-family:sans;/*poner tipo de letra BARRIO !cambiar el tipo de letra en este caso se aplicaria a toda la pagina porque esta en el body 
+	 * 
+	 * 
+	 */
+	 margin:0px;
+	
 }
-
-
 header{
-  height: 300px;
-  background: yellow;
+
+	padding:70px 0px 0px 0px;
+		/*LO PONGO DIRECTAMENTE EN EL HEADER>H1 */
+		/*text-align:left;*/
+	
+	background: rgba(117,137,12,1);
+	background: -moz-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(117,137,12,1)), color-stop(100%, rgba(164,179,87,1)));
+	background: -webkit-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	background: -o-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	background: -ms-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	background: linear-gradient(to bottom, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75890c', endColorstr='#a4b357', GradientType=0 );
 }
+
+
+header > h1{
+		padding:15px 0px;
+		font-family:serif;/*tipo de letra del header en el h1 */
+		text-align:center;
+}
+
+
+nav > h1{
+	font-family:Barrio,cursive;
+	text-align:left;
+	
+	padding: 0px 15px;
+	top:-10px;
+	
+	
+	
+}
+	/*Menu DropDown */
+nav{
+		
+		padding:0;/*se necesita si no
+		 * se va a un lado las cosas
+		 */
+		 
+	
+		
+		
+}
+
+#Logo{
+	width:100px;
+}
+
+.clear{
+	clear:both;
+}
+
+nav ul{
+		
+		padding:0; /*si quitamos eso aparece lo del
+		 *  background rosa apareciendo un cuadrado en index
+		 * 
+		 */
+		list-style-type:none;
+		text-align:center;
+		/*background-color:#e73827; /*ROJO */
+		box-shadow: 0px 0px 10px 0px black;
+		background-color: rgba(250, 250, 250, 0.2);
+		
+}
+
+
+nav > ul{
+		width:600px;
+		margin:auto;/*se va el index git etc hacia un lado si lo quitas */
+		/*background-color:#207ce5; /*AZUL */
+		display: flex;
+   		flex-flow: row;
+		
+}
+
+nav ul li{
+		display:table-cell;
+		width:150px; /*se solapa indext etc junto en la izquierda
+		 * 
+		 */
+		position:relative;
+		padding:0px;
+		/*border:2px solid blue;*/
+		
+}
+
+nav ul li a {
+		display:block;
+		
+		
+		line-height:50px;
+		text-decoration:none;/*con esto activado hace que no  se ponga ninguna raya debajo de las palabras
+		 * 
+		 */
+		
+	
+	
+}
+nav ul li a:hover{
+	
+	background-color:#e73827;
+	font-weight:bold;
+	
+}
+nav ul li img{
+		width:40px;
+		height:40px;
+		position:absolute;
+		top:-50px;
+		left:55px;
+		display:none;
+}
+
+nav ul li img.activa{
+		display:inline;
+		
+}
+
+nav ul li a:hover img{
+		display:inline;
+}
+nav ul li ul{
+		    width: auto;
+		position:absolute;/*esto hace que no aparezca lo del rosa pero cuando abres las columnas
+		 * 
+		 */
+		overflow:hidden;/*hace  aparecer y desaparecer las tablas
+		 * 
+		 */
+		max-height:0px;/*lo mismo que lo de overflow */
+		box-shadow:10px 10px 15px #888888;
+		transition:max-height 1s; 
+		
+}
+
+nav ul li ul li a{
+		
+}
+
+nav ul li:hover ul{
+	
+	max-height:300px; /*esto hace que aparezca el menu osea la lista
+	 * 
+	 */
+}
+nav ul li ul li{
+	display:block; /*los dos datos que hay sin eso se pondria uno al lado del otro en la lista
+	 * 
+	 */
+	 background-color:grey;
+}
+/******* Main *********/
 
 
 content{
@@ -15,7 +178,6 @@ content{
 /*  border: 2px solid green;*/
   display: flex;
   margin: auto;
-
 
 }
   aside{
@@ -42,24 +204,40 @@ content{
 
   }
 
-  nav{
+  aside #navAside{
     position: sticky;
     top: 38.8%;
     height: 300px;
 
   }
-
-  nav ul{
-    padding: 0;
+  
+  #navAside{
+  	width:200px;
   }
-  nav ul a{
+
+ aside #navAside ul{
+    padding: 0;
+    
+    width: 150px;
+    display: flex;
+    flex-flow: column;
+  }
+ aside #navAside ul a{
+ 	color:black;
+    text-decoration:none;
+
+
+  }
+
+aside #navAside ul a:hover{
     color:#6666ff;
     text-decoration:none;
 
 
   }
 
-  nav ul a li {
+
+ aside #navAside ul a li {
     list-style:none;
 
 }
@@ -98,9 +276,9 @@ main{
       text-align: center;
     }
 
+/****** Footer ********/
 
-
-    footer{
+   footer{
       text-align: center;
       margin: 50px 0px 50px 0px;
       padding: 20px 0px 0px 0px;
@@ -142,7 +320,7 @@ main{
 
 
       #Caja{
-        float:right;;
+        float:right;
 
       }
 
@@ -155,3 +333,85 @@ main{
         display: block;
         margin: 20px 0px 0px 0px;
       }
+
+/*TIPOS DE LETRAS ETC  */
+
+/*font-family: tipo de letra, mejor ponerlo por si el tipo de letra no tiene el serif o el times times, serif  */
+
+/*font-size: TAMAÑO DE LETRA! EJEMPLO  1.5em; */  
+
+/****** Index contSlider ********/
+#contSlider{
+	display:block;
+	background-color:gray;
+	max-height:800px;
+	 display: flex;   
+    flex-flow:row nowrap;
+    align-content:space-around;
+}
+#menuSlider{
+ 	display: flex;   
+ 	flex-wrap:wrap;
+    /*flex-flow:column wrap;*/
+	align-content:space-around;
+	justify-content:space-around;
+}
+
+
+
+#datosSlider{
+	 display: flex;   
+    flex-flow:column-reverse nowrap;
+}
+/****** RESPONSIV ********/
+/****** Media queries ********
+ * 
+ * 
+ */
+
+@media screen and (max-width:1200px){
+	
+	
+header{
+		padding:10px 0px 0px 0px;
+}
+	
+	
+	nav > h1{
+
+	position: relative;
+
+	
+	
+}
+nav ul li, nav ul li a{
+	display:inline;
+	padding:0px 5px;
+}
+
+nav ul li img.activa{
+		display:none;
+		
+}
+nav ul .activa{
+		background-color:#e73827;
+		font-weight:bold;
+}
+
+nav ul li a:hover img{
+		display:none;
+}
+
+nav ul {
+	text-align:left;
+	width:100%;
+}
+
+nav ul li:hover ul{
+	
+	max-height:0px;
+	
+}
+
+
+

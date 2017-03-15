@@ -4,8 +4,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>ProyectoGH1</title>
-		<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
 		<link rel="stylesheet" href="css/css.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 
@@ -15,15 +17,15 @@
 
 
 <nav>
-<h1>
-<img  id = "Logo"src="img/F2R2.png" alt="uno" title="log"/>
+	<div id="topLeft">
+		<img  id = "Logo"src="img/F2R2.png" alt="uno" title="log"/>
+		<h1>Conociendo</h1>
+	</div>
 
-tutoriales.com</h1>
-<div class="clear">
-</div>
 
 <ul>
 	<li><a href="index.html">Index</a></li>
+	
 	<li><a href="git.html">Git
 	<img src="img/git_logo.png" alt="uno" title="log"/></a>
 	
@@ -34,21 +36,43 @@ tutoriales.com</h1>
 	</ul>
 	</li>
 		
-	<li><a href="github.html">GitHub
-		<img src="img/github.gif" alt="uno" title="log"/>
+	<li class="activa" ><a href="github.html">GitHub
+		<img  class="activa" src="img/github.gif" alt="uno" title="log"/>
 	</a>		
 	
 	<ul>
-			<li><a href="#">Descripcion</a>
-			</li>
-
-			<li><a href="#">Desarollo</a></li>
+			<a href="#que" title="DESCRIPCION">
+                <li>
+                  ¿Qué es GitHub?
+                </li>
+              </a>
+              
+              <a href="#Manejo" title="DESENLACE">
+                <li>
+             Manejo de repositorios
+                </li>
+              </a>
+              <a href="#un" title="DESENLACE">
+                <li>
+             Crear un proyecto
+                </li>
+              </a>
+              <a href="#Subir" title="DESENLACE">
+                <li>
+            Subir proyecto
+                </li>
+              </a>
+              <a href="#ajeno" title="DESENLACE">
+                <li>
+             Colaborar en un proyecto ajeno
+                </li>
+              </a>
 	</ul>
 
 	</li>
 	
-	<li class="activa"><a href="eclipse.html">Eclipse
-		<img   class="activa" src="img/eclipse-200x200.png" alt="uno" title="log"/>
+	<li ><a href="eclipse.html">Eclipse
+		<img  src="img/eclipse-200x200.png" alt="uno" title="log"/>
 </a>
 	<ul>
 			<li><a href="#">Descripcion</a></li>
@@ -67,132 +91,54 @@ tutoriales.com</h1>
 
 
     <content>
-      <aside>
-        <nav id="navAside">
-            <ul>
-              <a href="#DESCRIPCION" title="DESCRIPCION">
-                <li>
-                  DESCRIPCION
-                </li>
-              </a>
-
-              <a href="#DESARROLLO" title="DESARROLLO">
-                <li>
-                  DESARROLLO
-                </li>
-              </a>
-
-              <a href="#DESENLACE" title="DESENLACE">
-                <li>
-                  DESENLACE
-                </li>
-              </a>
-              </ul>
-        </nav>
-      </aside>
-
-       <main>
-          <h2 id="DESCRIPCION">
-            DESCRIPCION
-          </h2>
-            <P>
-            In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-“The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-Using the Polyfill
-
-To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
-            </P>
-            <figure>
-		            <img  src="img/eclipse1.png" alt="imagen" />
-		              <figcaption>Creando un proyecto</figcaption>
-	          </figure>
-
-            <h2 id="DESARROLLO">
-              DESARROLLO
-            </h2>
-              <P>
-              In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-  “The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-  Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-  Using the Polyfill
-
-  To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-  To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
-              </P>
-              <figure>
-  		            <img  src="img/eclipse1.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
-  	          </figure>
-
-              <h2 id="DESENLACE">
-
-                DESENLACE
-              </h2>
-                <P>
-                In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-    “The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-    Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-    Using the Polyfill
-
-    To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-    To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
-                </P>
-                <figure>
-    		            <img  src="img/eclipse1.png" alt="imagen" />
-    		              <figcaption>Creando un proyecto</figcaption>
-    	          </figure>
-
-        </main>
+     
     </content>
 
     <footer>
-
-      <div id="Izquierda">
-          <a>
-              <div class="Circulo">
-                IMAGEN
-              </div>
-          </a>
-          <a>
-              <div class="Circulo">
-                IMAGEN
-              </div>
-          </a>
-          <a>
-              <div class="Circulo">
-                IMAGEN
-              </div>
-          </a>
-      </div>
-
-      <div id="Derecha">
-
-            Contacto
-        <div id="Caja">
-          <a href="mailto:fcj31@hotmail.com">Francisco de la Cruz </a>
-          <a href="mailto:franciscogonzalez_87@hotmail.com">FranciscoGonzalez </a>
-          <a href="mailto:rommelgarcia4b@gmail.com">Rommel Garcia</a>
-        </div>
-      </div>
-
-      <div id="copyright">
-           <a>“Copyright © 2017"</a>
-      </div>
-
+		<div id="arriba">
+	      <div id="Izquierda">
+	      Github
+	          <a href=" https://github.com/Frank1820" title="Francisco">
+	              <div class="Circulo">
+	              
+	              <img src="https://avatars0.githubusercontent.com/u/22357135?v=3&s=460"/>
+	                <div class="CirculoName">SuperSayajin	                		
+		              	</div>
+	              </div>
+	          </a>
+	          <a href=" https://github.com/NoisyBoy01" title="Francisco de la Cruz">
+	              <div class="Circulo">
+	             	 <img src="https://avatars0.githubusercontent.com/u/22599956?v=3&s=460/"/>
+		           		<div class="CirculoName">
+	                		NoisyBoy01
+		              	</div>
+	              </div>
+	          </a>
+	          <a href=" https://github.com/rmlgc" title="Rommel Garcia">
+	              <div class="Circulo">
+	             	<img src="https://avatars3.githubusercontent.com/u/22599950?v=3&s=460"/>
+	               		<div class="CirculoName">
+	                		rmlgc
+		              	</div>
+	              </div>
+	          </a>
+	      </div>
+	
+	      <div id="Derecha">
+		
+	            Contacto
+	        <div id="Caja">
+	          <a href="mailto:fcj31@hotmail.com">Francisco de la Cruz </a>
+	          <a href="mailto:franciscogonzalez_87@hotmail.com">FranciscoGonzalez </a>
+	          <a href="mailto:rommelgarcia4b@gmail.com">Rommel Garcia</a>
+	        </div>
+	      </div>
+		</div>
+		<div id="abajo">
+	      <div id="copyright">
+	           <p>todas la imagenes de la pagina han sido obtenidas de internet | Copyright © 2017 |themplate design by <a href=" https://github.com/Frank1820" title="Francisco">Frank1820</a> - <a href=" https://github.com/NoisyBoy01" title="Francisco de la Cruz">NoisyBoy01</a> - <a href=" https://github.com/rmlgc" title="Rommel Garcia"> rmlgc</a> </p>
+	      </div>
+		</div>
 	  </footer>
 
 

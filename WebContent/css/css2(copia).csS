@@ -1,24 +1,11 @@
-body{
-	background: rgba(254,254,254,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(254,254,254,1) 0%, rgba(221,221,221,1) 66%, rgba(209,209,209,1) 90%, rgba(216,216,216,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(254,254,254,1)), color-stop(66%, rgba(221,221,221,1)), color-stop(90%, rgba(209,209,209,1)), color-stop(100%, rgba(216,216,216,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(254,254,254,1) 0%, rgba(221,221,221,1) 66%, rgba(209,209,209,1) 90%, rgba(216,216,216,1) 100%);
-background: -o-radial-gradient(center, ellipse cover, rgba(254,254,254,1) 0%, rgba(221,221,221,1) 66%, rgba(209,209,209,1) 90%, rgba(216,216,216,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(254,254,254,1) 0%, rgba(221,221,221,1) 66%, rgba(209,209,209,1) 90%, rgba(216,216,216,1) 100%);
-background: radial-gradient(ellipse at center, rgba(254,254,254,1) 0%, rgba(221,221,221,1) 66%, rgba(209,209,209,1) 90%, rgba(216,216,216,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d8d8d8', GradientType=1 );
-}
 header h1{
 font-size:50px;
 text-shadow:1px 0px 5px purple;
 }
 
-footer p{
+footer h1{
 font-size:x-small;	
 text-shadow:1px 0px 5px black;
-font-family:'Share Tech Mono', monospace;
-display:table;
-	margin:30px auto;
 }
 
 h1{
@@ -33,9 +20,6 @@ h1{
 	overflow:overlay;
 	border-radius:20px;
 	box-shadow:0px 0px 15px 0px black; 
-	animation: colorchange 10s infinite; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 10s infinite; /* Chrome and Safari */
 }
 #contSlider{
 	min-height:700px;
@@ -74,9 +58,9 @@ h1{
     opacity:0.5;
     box-shadow:0px 0px 5px 0px black;
     overflow:hidden;
-    background-size:100%;
+    /*background-size:100%;*/
     background-repeat:no-repeat; 
-    background-position:center;
+    background-position:left;
 
 	animation: colorchange 10s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
@@ -124,7 +108,7 @@ h1{
 	flex:4;
 	opacity:1;
 	box-shadow:0px 0px 5px 0px black; 
-	background-size:90%;  
+	background-size:70% 50%;  
 	background-position:center;
 }
 
@@ -133,7 +117,7 @@ h1{
 	
 }
 #git:hover {
-	background-image:url(../img/git-logo.gif);
+	/*background:url(../img/git-logo.gif)no-repeat center;*/
 display:flex;
 }
 
@@ -143,7 +127,7 @@ opacity:1;
 }
 
 #github:hover {
-background-image:url(../img/github.gif);
+/*background:url(../img/github-logo.gif)no-repeat center;*/
 display:flex;
 }
 
@@ -153,7 +137,7 @@ opacity:1;
 }
 
 #eclipse:hover {
-background-image:url(../img/eclipse-800x426.png);
+/*background:url(../img/eclipse-logo.png)no-repeat center;*/
 display:flex;
 }
 
@@ -163,13 +147,13 @@ opacity:1;
 }
 
 #git{
-	background-image:url(../img/git_logo.png);
+	background-image:url(../img/git-logo.gif);
 	
 }
 
 #github{
-	background-image:url(../img/github2.gif);
+	background-image:url(../img/github-logo.gif);
 }
 #eclipse{
-	background-image:url(../img/eclipse-200x200.png);
+	background-image:url(../img/eclipse-logo.png);
 }

@@ -8,13 +8,18 @@
 } /*Para que sea fijo
  * el margen ejemplo 600px y no mas.
  */
-body {
-	font-family: sans;
-	/*poner tipo de letra BARRIO !cambiar el tipo de letra en este caso se aplicaria a toda la pagina porque esta en el body 
+
+html,body{
+ margin:0px;
+	padding:0px;
+}
+body{
+	font-family:Lato;/*poner tipo de letra BARRIO !cambiar el tipo de letra en este caso se aplicaria a toda la pagina porque esta en el body 
 	 * 
 	 * 
 	 */
-	margin: 0px;
+
+	 margin:0px;
 	background-color: #fefefe;
 }
 
@@ -52,11 +57,13 @@ header>h1 {
 	text-align: center;
 }
 
-#topLeft {
-	display: flex;
-	flex: 0.6;
-	min-width: 450px;
-	align-items: center;
+<<<<<<< HEAD
+#topLeft{
+	display:flex;
+	flex:0.6;
+	min-width:450px;
+	max-width:450px;	
+	align-items:center;
 }
 
 #topLeft>h1 {
@@ -73,6 +80,7 @@ nav {
 		 * se va a un lado las cosas
 		 */
 }
+
 
 #Logo {
 	width: 20%;
@@ -223,98 +231,51 @@ main h4 {
 	margin: 30px 0px 10px 30px;
 }
 
-#git {
-	background: rgba(248, 80, 50, 0);
-	background: -moz-linear-gradient(left, rgba(248, 80, 50, 0) 30%,
-		rgba(248, 80, 50, 0.9) 51%, rgba(248, 80, 50, 0.92) 55%,
-		rgba(241, 111, 92, 1) 70%, rgba(240, 47, 23, 1) 90%,
-		rgba(231, 56, 39, 1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(30%, rgba(248, 80, 50,
-		0)), color-stop(51%, rgba(248, 80, 50, 0.9)),
-		color-stop(55%, rgba(248, 80, 50, 0.92)),
-		color-stop(70%, rgba(241, 111, 92, 1)),
-		color-stop(90%, rgba(240, 47, 23, 1)),
-		color-stop(100%, rgba(231, 56, 39, 1)));
-	background: -webkit-linear-gradient(left, rgba(248, 80, 50, 0) 30%,
-		rgba(248, 80, 50, 0.9) 51%, rgba(248, 80, 50, 0.92) 55%,
-		rgba(241, 111, 92, 1) 70%, rgba(240, 47, 23, 1) 90%,
-		rgba(231, 56, 39, 1) 100%);
-	background: -o-linear-gradient(left, rgba(248, 80, 50, 0) 30%,
-		rgba(248, 80, 50, 0.9) 51%, rgba(248, 80, 50, 0.92) 55%,
-		rgba(241, 111, 92, 1) 70%, rgba(240, 47, 23, 1) 90%,
-		rgba(231, 56, 39, 1) 100%);
-	background: -ms-linear-gradient(left, rgba(248, 80, 50, 0) 30%,
-		rgba(248, 80, 50, 0.9) 51%, rgba(248, 80, 50, 0.92) 55%,
-		rgba(241, 111, 92, 1) 70%, rgba(240, 47, 23, 1) 90%,
-		rgba(231, 56, 39, 1) 100%);
-	background: linear-gradient(to right, rgba(248, 80, 50, 0) 30%,
-		rgba(248, 80, 50, 0.9) 51%, rgba(248, 80, 50, 0.92) 55%,
-		rgba(241, 111, 92, 1) 70%, rgba(240, 47, 23, 1) 90%,
-		rgba(231, 56, 39, 1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032',
-		endColorstr='#e73827', GradientType=1);
-}
+  #git{
+  background: rgba(248,80,50,0);
+background: -moz-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(30%, rgba(248,80,50,0)), color-stop(51%, rgba(248,80,50,0.9)), color-stop(55%, rgba(248,80,50,0.92)), color-stop(70%, rgba(241,111,92,1)), color-stop(90%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+background: -webkit-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+background: -o-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+background: -ms-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+background: linear-gradient(to right, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+  }
+  
+  #github{
+  background: rgba(255,255,255,0);
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(9%, rgba(255,255,255,0.8)), color-stop(24%, rgba(255,255,255,1)), color-stop(30%, rgba(255,255,255,1)), color-stop(45%, rgba(222,222,222,1)), color-stop(70%, rgba(133,133,133,1)), color-stop(85%, rgba(36,36,36,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=1 );
+  }
 
-#github {
-	background: rgba(255, 255, 255, 0);
-	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 1) 24%,
-		rgba(255, 255, 255, 1) 30%, rgba(222, 222, 222, 1) 45%,
-		rgba(133, 133, 133, 1) 70%, rgba(36, 36, 36, 1) 85%, rgba(0, 0, 0, 1)
-		100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255,
-		0)), color-stop(9%, rgba(255, 255, 255, 0.8)),
-		color-stop(24%, rgba(255, 255, 255, 1)),
-		color-stop(30%, rgba(255, 255, 255, 1)),
-		color-stop(45%, rgba(222, 222, 222, 1)),
-		color-stop(70%, rgba(133, 133, 133, 1)),
-		color-stop(85%, rgba(36, 36, 36, 1)),
-		color-stop(100%, rgba(0, 0, 0, 1)));
-	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 1) 24%,
-		rgba(255, 255, 255, 1) 30%, rgba(222, 222, 222, 1) 45%,
-		rgba(133, 133, 133, 1) 70%, rgba(36, 36, 36, 1) 85%, rgba(0, 0, 0, 1)
-		100%);
-	background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 1) 24%,
-		rgba(255, 255, 255, 1) 30%, rgba(222, 222, 222, 1) 45%,
-		rgba(133, 133, 133, 1) 70%, rgba(36, 36, 36, 1) 85%, rgba(0, 0, 0, 1)
-		100%);
-	background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 1) 24%,
-		rgba(255, 255, 255, 1) 30%, rgba(222, 222, 222, 1) 45%,
-		rgba(133, 133, 133, 1) 70%, rgba(36, 36, 36, 1) 85%, rgba(0, 0, 0, 1)
-		100%);
-	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 1) 24%,
-		rgba(255, 255, 255, 1) 30%, rgba(222, 222, 222, 1) 45%,
-		rgba(133, 133, 133, 1) 70%, rgba(36, 36, 36, 1) 85%, rgba(0, 0, 0, 1)
-		100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
-		endColorstr='#000000', GradientType=1);
-}
+aside #navAside{
+    position: sticky;
+    top: 19%;
+    height: 666px;
+	width:100%;
+  }
 
-aside #navAside {
-	position: sticky;
-	top: 19%;
-	height: 450px;
-	width: 100%;
-}
+ aside #navAside ul{
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+ aside #navAside ul a{
+ 	color:black;
+    text-decoration:none;
 
-aside #navAside ul {
-	padding: 0;
-	display: flex;
-	flex-flow: column;
-	height: 100%;
-	align-items: center;
-	justify-content: space-around;
-	width: 100%;
-}
 
-aside #navAside ul a {
-	color: black;
-	text-decoration: none;
-}
+  }
 
 aside #navAside ul a li {
 	list-style: none;
@@ -331,11 +292,112 @@ main {
 	padding-top: 100px;
 }
 
+
 main p {
 	display: block;
 	padding: 0px 20px 0px 30px;
 	font-family: Lato;
 }
+
+    figure img{
+      max-width: 500px;
+    }
+    figcaption{
+      text-align: center;
+    }
+    
+    ol figure{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 400px;
+    max-width: 500px;
+    }
+
+.nota{
+	margin:auto;
+		width:30%;
+	 box-shadow: 1px 1px 20px 1px;
+	}
+
+.nota h5{
+	background-color: lightblue;
+    padding: 5px;
+    margin: 0px;
+}
+.nota p{
+    padding: 0px 10px;
+    margin: 5px;
+}
+
+.code{
+	font-family:'Source Code Pro';
+	border:1px solid #ccc ;
+	
+}
+
+
+/***********************ROMMEL TARGET*******************************/
+:target{
+	
+	animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 5s ; /* Chrome and Safari */
+}
+
+    @keyframes colorchange
+    {
+      0%   {border-bottom: 1px solid red;
+      	 margin: 30px 0px 0px 30px;
+      	display:block;
+      	
+      		color:red;
+      	font-size:30px;
+      }
+      25%  {border-bottom: 1px solid purple;
+      	color:purple;
+      	font-size:none;
+      }
+      50%  {border-bottom: 1px solid  blue;
+      	color:blue;
+      }
+      75%  {border-bottom: 1px solid  green;
+      	color:green;
+      }
+      100% {border-bottom: 1px solid  red;
+      	 margin: 30px 0px 10px 30px;
+      	color:red;
+      }
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {border-bottom: 1px solid  red;
+      	 margin: 30px 0px 0px 30px;
+      	display:block;
+      	
+      	color:red;
+      	font-size:3em;
+      }
+      25%  {border-bottom: 1px solid  Purple;
+      	color:purple;
+      }
+      50%  {border-bottom: 1px solid  blue;
+      	color:blue;
+      }
+      75%  {border-bottom: 1px solid green;
+      	color:green;
+      	font-size:1.5em;
+      }
+      100% {border-bottom: 1px solid  red;
+      	 margin: 30px 0px 10px 30px;
+      	color:red;
+      }
+    }
+
+/***********************ROMMEL TARGET*******************************/
+
+>>>>>>> branch 'master' of https://github.com/NoisyBoy01/ProyectoGH.git
 
 main h2 {
 	font-family: 'Fugaz One';
@@ -388,6 +450,19 @@ figcaption {
 
 /****** Footer ********/
 footer {
+
+      display:flex;
+      padding: 100px 0px 10px 0px;
+      border-top: 1px solid #ccc;
+	height:350px;
+	flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width:800px;
+    }
+
+#arriba{
 	display: flex;
 	padding: 100px 0px 10px 0px;
 	border-top: 1px solid #ccc;
@@ -397,12 +472,10 @@ footer {
 	justify-content: space-between;
 }
 
-#arriba {
-	display: flex;
-	width: 80%;
-	justify-content: center;
-}
-
+    	footer #arriba a{
+    	text-decoration:none;
+    	color:black;
+    	}
 footer a:hover {
 	text-decoration: none;
 }
@@ -412,25 +485,63 @@ footer a {
 	color: black;
 }
 
-#Izquierda {
-	display: flex;
-	flex: 2;
-	justify-content: space-between;
+footer p{
+font-size:x-small;	
+text-shadow:1px 0px 5px black;
+font-family:'Share Tech Mono', monospace;
+display:table;
+	margin:30px auto;
 }
+      #Izquierda{
+     display: flex;
+    flex: 2;
+    justify-content: space-around;
+	align-items: center;
+      }
 
-.Circulo {
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	border: 1px solid;
-	border-radius: 50px;
-	margin: 0px 10px;
+
+
+      .Circulo{
+        width: 120px;
+        height: 120px;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 100px;
+        margin: 0px 10px;
+		overflow:hidden;
+      }
+      
+      .Circulo img{
+      width: 100%
+      }
+      
+        .CirculoName{
+        
+        display: none;
+        }
+      
+      .Circulo:hover img{
+      display: none;
+      }
+      
+.Circulo:hover {
+border: 2px solid greenyellow;
 }
-
+      
+      .Circulo:hover .CirculoName{
+      font-family:'Fugaz One';
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(230,230,230,0.8);
+      }
+      
+/*
 .CirculoName:hover {
 	display: none;
 }
-
+*/
 .CirculoName:hover {
 	display: flex;
 	height: 100%;
@@ -491,6 +602,7 @@ footer a {
  * 
  * 
  */
+
 @media screen and (max-width:1200px) {
 	header {
 		padding: 10px 0px 0px 0px;

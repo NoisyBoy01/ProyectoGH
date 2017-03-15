@@ -16,10 +16,8 @@ body{
 	 * 
 	 * 
 	 */
-<<<<<<< HEAD
 	 margin:0px;
-=======
->>>>>>> refs/heads/localRommel
+
 	background-color: #fefefe;
 }
 header{
@@ -48,10 +46,7 @@ header > h1{
 	display:flex;
 	flex:0.6;
 	min-width:450px;
-<<<<<<< HEAD
-=======
 	max-width:450px;	
->>>>>>> refs/heads/localRommel
 	align-items:center;
 }
 
@@ -226,17 +221,9 @@ margin: 30px 0px 10px 30px;
 
 
 
-<<<<<<< HEAD
 
-
-
-
- #git{
-=======
-  }
     
   #git{
->>>>>>> refs/heads/localRommel
   background: rgba(248,80,50,0);
 background: -moz-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(30%, rgba(248,80,50,0)), color-stop(51%, rgba(248,80,50,0.9)), color-stop(55%, rgba(248,80,50,0.92)), color-stop(70%, rgba(241,111,92,1)), color-stop(90%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
@@ -261,11 +248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 aside #navAside{
     position: sticky;
     top: 19%;
-<<<<<<< HEAD
-    height: 450px;
-=======
     height: 666px;
->>>>>>> refs/heads/localRommel
 	width:100%;
   }
 
@@ -306,11 +289,8 @@ main{
     main p{
       display:block;
       padding: 0px 20px 0px 30px;
-<<<<<<< HEAD
       font-family:Lato;
-=======
-      
->>>>>>> refs/heads/localRommel
+
 
     }
 
@@ -452,10 +432,8 @@ main{
 	flex-flow: column;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-=======
+
     min-width:800px;
->>>>>>> refs/heads/localRommel
     }
 
 #arriba{
@@ -464,26 +442,12 @@ main{
     justify-content: center;
 }
 
-#arriba{
-	display: flex;
-    width: 80%;
-    justify-content: center;
-}
-
-      footer #arriba a:hover{
-      	text-decoration:none;
-      	}
     	footer #arriba a{
     	text-decoration:none;
     	color:black;
     	}
 
-<<<<<<< HEAD
-      #Izquierda{
-     display: flex;
-    flex: 2;
-    justify-content: space-between;
-=======
+
 footer p{
 font-size:x-small;	
 text-shadow:1px 0px 5px black;
@@ -491,8 +455,6 @@ font-family:'Share Tech Mono', monospace;
 display:table;
 	margin:30px auto;
 }
->>>>>>> refs/heads/localRommel
-
       #Izquierda{
      display: flex;
     flex: 2;
@@ -610,15 +572,5 @@ border: 2px solid greenyellow;
 
 	
 	
-	
-	
-<<<<<<< HEAD
-}
-=======
-	
-	
-	
-	
->>>>>>> refs/heads/localRommel
 
 

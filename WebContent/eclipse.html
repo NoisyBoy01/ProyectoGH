@@ -38,24 +38,43 @@ tutoriales.com</h1>
 		<img src="img/github.gif" alt="uno" title="log"/>
 	</a>		
 	
-	<ul>
-			<li><a href="#">Descripcion</a>
-			</li>
+<ul>
+   <a href="github.html#descripcion" title="DESCRIPCION">
+                <li>
+                  ¿Qué es GitHub?
+                </li>
+              </a>
 
-			<li><a href="#">Desarollo</a></li>
-	</ul>
+              <a href="#para" title="DESARROLLO">
+                <li>
+                 ¿Para que sirve?
+                </li>
+              </a>
+
+              <a href="#proporciona" title="DESENLACE">
+                <li>
+                  ¿Qué herramientas proporciona?
+                </li>
+              </a>
+               <a href="#daremos" title="DESENLACE">
+                <li>
+                 ¿Qué uso le daremos?
+                </li>
+              </a>
+ </ul>
 
 	</li>
 	
 	<li class="activa"><a href="eclipse.html">Eclipse
 		<img   class="activa" src="img/eclipse-200x200.png" alt="uno" title="log"/>
 </a>
-	<ul>
-			<li><a href="#">Descripcion</a></li>
-			<li><a href="#">Desarollo</a></li>
-
-	</ul>
-	
+		<ul>
+			<li><a href="#QUES">¿QUE ES ECLIPSE?</a></li>
+			<li><a href="#INSTAL">INSTALACION DEL IDE ECLIPSE</a></li>	
+			<li><a href="#CREANDO1">CREANDO UN PROYECTO</a></li>
+			<li><a href="#HACIENDO">HACIENDO UN PUSH</a></li>
+			<li><a href="#CREANDO2">CREANDO ARCHIVO .gitignore</a></li>
+		</ul>
 	</li>
 
 </ul>
@@ -70,21 +89,31 @@ tutoriales.com</h1>
       <aside>
         <nav id="navAside">
             <ul>
-              <a href="#DESCRIPCION" title="DESCRIPCION">
+				<a href="#QUES" title="¿QUE ES ECLIPSE?">
                 <li>
-                  DESCRIPCION
+                  ¿QUE ES ECLIPSE?
+                </li>
+              </a>
+				<a href="#INSTAL" title="INSTALACION DEL IDE ECLIPSE">
+                <li>
+                  INSTALACION DEL IDE ECLIPSE
+                </li>
+              </a>
+              <a href="#CREANDO1" title="CREANDO UN PROYECTO">
+                <li>
+                  CREANDO UN PROYECTO
                 </li>
               </a>
 
-              <a href="#DESARROLLO" title="DESARROLLO">
+              <a href="#HACIENDO" title="HACIENDO UN PUSH">
                 <li>
-                  DESARROLLO
+                  HACIENDO UN PUSH
                 </li>
               </a>
 
-              <a href="#DESENLACE" title="DESENLACE">
+              <a href="#CREANDO2" title="CREANDO ARCHIVO .gitignore">
                 <li>
-                  DESENLACE
+                  CREANDO ARCHIVO .gitignore
                 </li>
               </a>
               </ul>
@@ -92,69 +121,145 @@ tutoriales.com</h1>
       </aside>
 
        <main>
-          <h2 id="DESCRIPCION">
-            DESCRIPCION
+              <h2 id="QUES">
+				¿QUE ES ECLIPSE?
+              </h2>
+		<img  src="img/eclipse.png" alt="imagen" />
+                <P>
+               Es una potente y completa plataforma de programación,desarrollo y compilación de elementos tan variados como sitios web,programas en C++ ó aplicaciones Java.No es mas que un entorno de desarrollo integrado(IDE) en el que encontrarás todas las herramientas y funciones necesarias para tu trabajo, recogidas además en una atractiva interfaz que lo hace fácil y agradable de usar.
+		
+			 
+
+En otras palabras, Eclipse es un entorno de desarrollo integrado, de Código abierto y Multiplataforma.
+                </P>
+
+              <h2 id="CARACT">
+
+                CARACTERISTICAS DE ECLIPSE
+ 			</h2>
+	<ul class="ulEclipse"><li>Dispone de un editor de texto con resaltado de sintaxis donde puedes ver el contenido
+		del fichero en el que estás trabajando.</li>
+     <li>Contiene una lista de tareas y otros modulos similaras.</li>
+     <li>La compilación es en tiempo real.</li>
+     <li>Tiene pruebas unitarias con Junit.</li>
+	<li>Integración con Ant, asistentes(Wizards) para creación de proyectos, clases, tests,etc., y refactorización.</li>
+	</ul>
+
+              <h2 id="INSTAL">
+
+                INSTALACION DEL IDE ECLIPSE
+              </h2>
+               
+              <h4> Su instalación es muy sencilla:</h4>
+<ul class="ulEclipse">
+<li>Visitar http://www.eclipse.org y pulsar “Download Eclipse”</li>
+<li>Descargar la versión actual “Eclipse IDE for Java Developers”</li>
+<li>Descomprimir en la carpeta donde queramos instalalar Eclipse</li>
+<li>Ejecutar el programa “eclipse” que hay dentro de esa carpeta</li>
+</ul>
+               
+
+          <h2 id="CREANDO1">
+            CREANDO UN PROYECTO
           </h2>
             <P>
-            In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-“The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-Using the Polyfill
-
-To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
+           Seleccionamos en la pestaña de file en donde dice new Proyect y se abrirá una ventana nueva en la cual debemos de seleccionar si el tipo de proyecto que vamos a comenzar,en nuestro caso sera un proyecto web con contenido estático, ejemplo(HTML).
             </P>
             <figure>
-		            <img  src="img/eclipse1.png" alt="imagen" />
+		            <img  src="img/1.png" alt="imagen" />
 		              <figcaption>Creando un proyecto</figcaption>
 	          </figure>
+			 
+				<figure>
+		            <img  src="img/2.png" alt="imagen" />
+		              <figcaption>Asignando nombre al proyecto</figcaption>
+	          </figure>
 
-            <h2 id="DESARROLLO">
-              DESARROLLO
+			 <P>
+          Debemos crear un repositorio en  git, para ello haremos click derecho sobre la carpeta del proyecto(eclipse) ,seleccionar “TEAM”y luego “SHARE PROJECT”,  luego seleccionar   “Use or create repository in parent folder of project”.
+            </P>
+
+			<figure>
+		            <img  src="img/3.png" alt="imagen" />
+		              <figcaption>CREANDO REPOSITORIO GIT</figcaption>
+	          </figure>
+
+			<P>
+		 Seleccionar abajo a la izquierda en “Create Repository”.Se puede ver que eclipse no recomienda crear repositorios en la propia carpeta de trabajo “Workspace” por lo que podemos crear el repositorio en alguna otra carpeta previamente creada para este fin.
+            </P>
+			<figure>
+		            <img  src="img/4.png" alt="imagen" />
+		              <figcaption>CREANDO REPOSITORIO GIT</figcaption>
+	          </figure>
+
+
+			<P>
+         Para empezar a trabajar en un archivo, podemos desglosar las carpetas contenidas en el proyecto y sobre la carpeta “Web content” hacer click derecho y seleccionar el tipo de archivo en el que empezaremos a trabajar, ejemplo HTML.
+            </P>
+
+			<figure>
+		            <img  src="img/5.png" alt="imagen" />
+		              <figcaption>SELECCIONANDO TIPO DE ARCHIVO</figcaption>
+	          </figure>
+			
+			<figure>
+		            <img  src="img/6.png" alt="imagen" />
+		              <figcaption>ASIGNANDO NOMBRE AL ARCHIVO HTML</figcaption>
+	          </figure>
+
+
+
+
+            <h2 id="HACIENDO">
+              HACIENDO UN PUSH
             </h2>
               <P>
-              In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
+              Primero debemos crear un repositorio en nuestra cuenta de github y copiar la URL de dicho repositorio.
 
-  “The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-  Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-  Using the Polyfill
-
-  To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-  To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
+Para hacer un push a nuestro repositorio en remoto, debemos hacer click derecho sobre el proyecto que queremos subir(eclipse) y click en remote, donde se abrirá una ventana en la cual debemos pegar la URL previamente obtenida de nuestro github, además de comprobar los datos con nuestra contraseña y cuenta github.
               </P>
               <figure>
-  		            <img  src="img/eclipse1.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		            <img  src="img/7.png" alt="imagen" />
+  		              <figcaption>SELECCIONAR NEXT</figcaption>
+  	          </figure>
+ 				<P>
+            En esta ventana podemos seleccionar las ramas a las que queremos hacer un push.
+Seleccionar la rama y seleccionar +Add Spec.
+              </P>
+              <figure>
+  		            <img  src="img/8.png" alt="imagen" />
+  		              <figcaption>SELECCIONAR NEXT</figcaption>
+  	          </figure>
+	
+				<figure>
+  		            <img  src="img/9.png" alt="imagen" />
+  		              <figcaption>SELECCIONAR FINISH</figcaption>
+  	          </figure>
+              <P>
+             Luego de hacer el push deberá aparecer este mensaje donde aparecerá la rama que ha sido subida y el repositorio al que ha sido subida.
+              </P>
+			<figure>
+  		            <img  src="img/10.png" alt="imagen" />
+  		              <figcaption>SELECCIONA OK PARA FINALIZAR</figcaption>
   	          </figure>
 
-              <h2 id="DESENLACE">
 
-                DESENLACE
+
+
+              <h2 id="CREANDO2">
+
+                CREANDO UN ARCHIVO .gitignore
               </h2>
                 <P>
-                In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-    “The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-    Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-    Using the Polyfill
-
-    To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-    To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
+               Siempre que comenzamos un proyecto se crean una serie de archivos(configuración,temporales,etc) que no nos interesan a la hora de hacer un commit, por lo que debemos de buscar una solución para ignorarlos. Para esto podemos agrupar todos este código en un solo archivo al que llamaremos .gitignore el cual podremos utilizar para pegarlo en cada proyecto nuevo y actualizar para que todos estos archivos se conviertan en uno solo(.gitignore).
                 </P>
                 <figure>
-    		            <img  src="img/eclipse1.png" alt="imagen" />
-    		              <figcaption>Creando un proyecto</figcaption>
+    		            <img  src="img/11.png" alt="imagen" />
+    		              <figcaption>ARCHIVO .gitignore</figcaption>
     	          </figure>
+                <P>
+    		 Al crear este archivo en eclipse(git) se agruparan todos los archivos a ignorar en uno solo que llamaremos .gitignore.
+                </P>
 
         </main>
     </content>
@@ -162,26 +267,28 @@ To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar w
     <footer>
 
       <div id="Izquierda">
-          <a>
+          <a href=" https://github.com/Frank1820" title="Francisco Gonzalez">
               <div class="Circulo">
-                IMAGEN
+               <img src="https://avatars0.githubusercontent.com/u/22357135?v=3&s=460"/>
               </div>
           </a>
-          <a>
-              <div class="Circulo">
-                IMAGEN
+          
+          <a href=" https://github.com/rmlgc" title="Rommel Garcia">
+ 				<div class="Circulo">
+				<img src="https://avatars3.githubusercontent.com/u/22599950?v=3&s=460"/>
+               
               </div>
           </a>
-          <a>
+          <a href=" https://github.com/NoisyBoy01" title="Francisco de la Cruz">
               <div class="Circulo">
-                IMAGEN
+                <img src="https://avatars0.githubusercontent.com/u/22599956?v=3&s=460"/>
               </div>
           </a>
       </div>
 
       <div id="Derecha">
 
-            Contacto
+            <p>Contacto</p>
         <div id="Caja">
           <a href="mailto:fcj31@hotmail.com">Francisco de la Cruz </a>
           <a href="mailto:franciscogonzalez_87@hotmail.com">FranciscoGonzalez </a>

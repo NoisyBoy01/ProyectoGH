@@ -13,45 +13,49 @@ body{
 	 * 
 	 */
 	 margin:0px;
-	
+	background-color: #fefefe;
 }
 header{
-
-	padding:70px 0px 0px 0px;
+    border-bottom: 1px solid#ccc;
+	padding:1px 0px 0px 0px;
 		/*LO PONGO DIRECTAMENTE EN EL HEADER>H1 */
 		/*text-align:left;*/
 	
-	background: rgba(117,137,12,1);
-	background: -moz-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(117,137,12,1)), color-stop(100%, rgba(164,179,87,1)));
-	background: -webkit-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
-	background: -o-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
-	background: -ms-linear-gradient(top, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
-	background: linear-gradient(to bottom, rgba(117,137,12,1) 0%, rgba(164,179,87,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75890c', endColorstr='#a4b357', GradientType=0 );
+	background: rgba(216,216,216,1);
+background: -moz-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(209,209,209,1) 40%, rgba(221,221,221,1) 59%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(216,216,216,1)), color-stop(40%, rgba(209,209,209,1)), color-stop(59%, rgba(221,221,221,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(209,209,209,1) 40%, rgba(221,221,221,1) 59%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(209,209,209,1) 40%, rgba(221,221,221,1) 59%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(209,209,209,1) 40%, rgba(221,221,221,1) 59%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to bottom, rgba(216,216,216,1) 0%, rgba(209,209,209,1) 40%, rgba(221,221,221,1) 59%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#fefefe', GradientType=0 );
 }
 
 
 header > h1{
 		padding:15px 0px;
-		font-family:serif;/*tipo de letra del header en el h1 */
 		text-align:center;
 }
 
+#topLeft{
+	display:flex;
+	flex:0.6;
+	min-width:450px;
+	align-items:center;
+}
 
-nav > h1{
-	font-family:Barrio,cursive;
-	text-align:left;
-	
-	padding: 0px 15px;
-	top:-10px;
-	
+#topLeft > h1{
+	font-family:'Fugaz One',cursive;
+	font-size:60px;
+	padding: 0px;
+	margin:0px;	
 	
 	
 }
 	/*Menu DropDown */
 nav{
-		
+		display:flex;
+		height:200px;
 		padding:0;/*se necesita si no
 		 * se va a un lado las cosas
 		 */
@@ -62,22 +66,18 @@ nav{
 }
 
 #Logo{
-	width:100px;
+	width:20%;
 }
 
-.clear{
-	clear:both;
+nav a{
+	font-family:'Fugaz One';
+	padding:10px 0px;
 }
 
 nav ul{
-		
-		padding:0; /*si quitamos eso aparece lo del
-		 *  background rosa apareciendo un cuadrado en index
-		 * 
-		 */
 		list-style-type:none;
 		text-align:center;
-		/*background-color:#e73827; /*ROJO */
+		padding:0px;
 		box-shadow: 0px 0px 10px 0px black;
 		background-color: rgba(250, 250, 250, 0.2);
 		
@@ -85,12 +85,10 @@ nav ul{
 
 
 nav > ul{
-		width:600px;
-		margin:auto;/*se va el index git etc hacia un lado si lo quitas */
-		/*background-color:#207ce5; /*AZUL */
+		align-self: flex-end;
 		display: flex;
    		flex-flow: row;
-		
+		margin:0px;
 }
 
 nav ul li{
@@ -99,29 +97,29 @@ nav ul li{
 		 * 
 		 */
 		position:relative;
-		padding:0px;
-		/*border:2px solid blue;*/
-		
+		padding:0px;		
 }
 
 nav ul li a {
 		display:block;
-		
-		
-		line-height:50px;
 		text-decoration:none;/*con esto activado hace que no  se ponga ninguna raya debajo de las palabras
 		 * 
 		 */
-		
+		color:black;
 	
 	
 }
-nav ul li a:hover{
-	
-	background-color:#e73827;
+
+nav a:hover{
 	font-weight:bold;
+	text-shadow: 1px 1px 5px greenyellow;
 	
 }
+
+nav ul li a:hover{
+	background-color:#808080;
+}
+
 nav ul li img{
 		width:40px;
 		height:40px;
@@ -136,10 +134,11 @@ nav ul li img.activa{
 		
 }
 
-nav ul li a:hover img{
+ul li:hover img{
 		display:inline;
 }
 nav ul li ul{
+	background-color:#ccc;
 		    width: auto;
 		position:absolute;/*esto hace que no aparezca lo del rosa pero cuando abres las columnas
 		 * 
@@ -167,14 +166,14 @@ nav ul li ul li{
 	display:block; /*los dos datos que hay sin eso se pondria uno al lado del otro en la lista
 	 * 
 	 */
-	 background-color:grey;
+	 
 }
 /******* Main *********/
 
 
 content{
 
-  width: 80%;
+  width: 90%;
 /*  border: 2px solid green;*/
   display: flex;
   margin: auto;
@@ -182,12 +181,11 @@ content{
 }
   aside{
 /*Para el @media display: none*/
-    flex: 0.5;
+    flex: 0.4;
+    min-width:250px;
+    max-width:300px;
   /*  border: 1px solid red;*/
     display: flex;
-
-
-
 
     background: rgba(255,175,75,0);
     background: -moz-linear-gradient(left, rgba(255,175,75,0) 40%, rgba(255,175,75,0.8) 45%, rgba(255,175,75,0.87) 50%, rgba(140,92,90,1) 60%, rgba(24,9,105,1) 70%);
@@ -197,45 +195,73 @@ content{
     background: -ms-linear-gradient(left, rgba(255,175,75,0) 40%, rgba(255,175,75,0.8) 45%, rgba(255,175,75,0.87) 50%, rgba(140,92,90,1) 60%, rgba(24,9,105,1) 70%);
     background: linear-gradient(to right, rgba(255,175,75,0) 40%, rgba(255,175,75,0.8) 45%, rgba(255,175,75,0.87) 50%, rgba(140,92,90,1) 60%, rgba(24,9,105,1) 70%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#180969', GradientType=1 );
+}
+    
+ 
+/*****************************************LISTA ECLIPSE*********************************************/
+
+.ulEclipse{
+list-style-image: url(https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/favicon.ico);
+
+}
+
+main h4{
+margin: 30px 0px 10px 30px;
+}
 
 
 
 
 
-  }
 
-  aside #navAside{
-    position: sticky;
-    top: 38.8%;
-    height: 300px;
 
+
+
+ #git{
+  background: rgba(248,80,50,0);
+background: -moz-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(30%, rgba(248,80,50,0)), color-stop(51%, rgba(248,80,50,0.9)), color-stop(55%, rgba(248,80,50,0.92)), color-stop(70%, rgba(241,111,92,1)), color-stop(90%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+background: -webkit-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+background: -o-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+background: -ms-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+background: linear-gradient(to right, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
   }
   
-  #navAside{
-  	width:200px;
+  #github{
+  background: rgba(255,255,255,0);
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(9%, rgba(255,255,255,0.8)), color-stop(24%, rgba(255,255,255,1)), color-stop(30%, rgba(255,255,255,1)), color-stop(45%, rgba(222,222,222,1)), color-stop(70%, rgba(133,133,133,1)), color-stop(85%, rgba(36,36,36,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 9%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 30%, rgba(222,222,222,1) 45%, rgba(133,133,133,1) 70%, rgba(36,36,36,1) 85%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=1 );
+  }
+
+aside #navAside{
+    position: sticky;
+    top: 19%;
+    height: 450px;
+	width:100%;
   }
 
  aside #navAside ul{
     padding: 0;
-    
-    width: 150px;
     display: flex;
     flex-flow: column;
+    height: 100%;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
   }
+  
  aside #navAside ul a{
  	color:black;
     text-decoration:none;
 
 
   }
-
-aside #navAside ul a:hover{
-    color:#6666ff;
-    text-decoration:none;
-
-
-  }
-
 
  aside #navAside ul a li {
     list-style:none;
@@ -244,27 +270,32 @@ aside #navAside ul a:hover{
 
 
 main{
-  flex: 2;
-/*  border: 1px solid black;*/
+  flex: 5;
   display: flex;
   flex-flow: column;
   min-width: 700px;
+  margin-right:15%;
+  margin-left:5%;
+  padding-bottom: 200px;
+  padding-top:100px;
     }
 
     main p{
       display:block;
       padding: 0px 20px 0px 30px;
+      font-family:Lato;
 
     }
 
     main h2{
+    font-family:'Fugaz One';
       margin: 30px 0px 10px 30px;
       /*Para el @Media  font-size: 335px;*/
     }
 
     figure{
       margin: 20px auto;
-      border-radius: 50px;
+      border-radius: 20px;
       overflow: hidden;
       box-shadow: 1px 1px 20px 1px
 
@@ -276,15 +307,39 @@ main{
       text-align: center;
     }
 
+.nota{
+	margin:auto;
+		width:30%;
+	 box-shadow: 1px 1px 20px 1px;
+	}
+
+.nota h5{
+	background-color: lightblue;
+    padding: 5px;
+    margin: 0px;
+}
+.nota p{
+    padding: 0px 10px;
+    margin: 5px;
+}
+
 /****** Footer ********/
 
    footer{
-      text-align: center;
-      margin: 50px 0px 50px 0px;
-      padding: 20px 0px 0px 0px;
+      display:flex;
+      padding: 100px 0px 10px 0px;
       border-top: 1px solid #ccc;
-
+	height:350px;
+	flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
     }
+
+#arriba{
+	display: flex;
+    width: 80%;
+    justify-content: center;
+}
 
       footer a:hover{
       	text-decoration:none;
@@ -295,7 +350,9 @@ main{
     	}
 
       #Izquierda{
-        display: inline-block;
+     display: flex;
+    flex: 2;
+    justify-content: space-between;
 
       }
 
@@ -308,14 +365,24 @@ main{
         margin: 0px 10px;
 
       }
+      
+        .CirculoName:hover{
+        display: none;
+        }
+      
+      .CirculoName:hover{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+      }
 
       #Derecha{
-        display: inline-block;
-        margin: 0px 0px 0px 50px;
-        height: 100px;
-        padding: 0px 0px 0px 50px;
-
-        border-left: 1px solid #ccc;
+    display: flex;
+    border-left: 1px solid #ccc;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
       }
 
 
@@ -329,11 +396,10 @@ main{
         display: block;
       }
 
-      #copyright{
-        display: block;
-        margin: 20px 0px 0px 0px;
-      }
-
+#abajo{
+	
+}
+    
 /*TIPOS DE LETRAS ETC  */
 
 /*font-family: tipo de letra, mejor ponerlo por si el tipo de letra no tiene el serif o el times times, serif  */
@@ -412,6 +478,5 @@ nav ul li:hover ul{
 	max-height:0px;
 	
 }
-
 
 

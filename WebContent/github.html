@@ -4,8 +4,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>ProyectoGH1</title>
-		<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
 		<link rel="stylesheet" href="css/css.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 
@@ -15,15 +17,15 @@
 
 
 <nav>
-<h1>
-<img  id = "Logo"src="img/F2R2.png" alt="uno" title="log"/>
+	<div id="topLeft">
+		<img  id = "Logo"src="img/F2R2.png" alt="uno" title="log"/>
+		<h1>Conociendo</h1>
+	</div>
 
-tutoriales.com</h1>
-<div class="clear">
-</div>
 
 <ul>
 	<li><a href="index.html">Index</a></li>
+	
 	<li><a href="git.html">Git
 	<img src="img/git_logo.png" alt="uno" title="log"/></a>
 	
@@ -39,10 +41,32 @@ tutoriales.com</h1>
 	</a>		
 	
 	<ul>
-			<li><a href="#">Descripcion</a>
-			</li>
-
-			<li><a href="#">Desarollo</a></li>
+			<a href="#que" title="DESCRIPCION">
+                <li>
+                  ¿Qué es GitHub?
+                </li>
+              </a>
+              
+              <a href="#Manejo" title="DESENLACE">
+                <li>
+             Manejo de repositorios
+                </li>
+              </a>
+              <a href="#un" title="DESENLACE">
+                <li>
+             Crear un proyecto
+                </li>
+              </a>
+              <a href="#Subir" title="DESENLACE">
+                <li>
+            Subir proyecto
+                </li>
+              </a>
+              <a href="#ajeno" title="DESENLACE">
+                <li>
+             Colaborar en un proyecto ajeno
+                </li>
+              </a>
 	</ul>
 
 	</li>
@@ -67,24 +91,64 @@ tutoriales.com</h1>
 
 
     <content>
-      <aside>
-        <nav id="navAside">
+      <aside id="github">
+        <nav id="navAside" >
             <ul>
-              <a href="#DESCRIPCION" title="DESCRIPCION">
+              <a href="#que" title="DESCRIPCION">
                 <li>
-                  DESCRIPCION
+                  ¿Qué es GitHub?
                 </li>
               </a>
 
-              <a href="#DESARROLLO" title="DESARROLLO">
+              <a href="#para" title="DESARROLLO">
                 <li>
-                  DESARROLLO
+                 ¿Para que sirve?
                 </li>
               </a>
 
-              <a href="#DESENLACE" title="DESENLACE">
+              <a href="#proporciona" title="DESENLACE">
                 <li>
-                  DESENLACE
+                  ¿Qué herramientas proporciona?
+                </li>
+              </a>
+               <a href="#daremos" title="DESENLACE">
+                <li>
+                 ¿Qué uso le daremos?
+                </li>
+              </a>
+                <a href="#aprendiendo" title="DESENLACE">
+                <li>
+             Aprendiendo a usar GitHub
+                </li>
+              </a>
+              <a href="#crear" title="DESENLACE">
+                <li>
+             Crear una cuenta
+                </li>
+              </a>
+              <a href="#Manejo" title="DESENLACE">
+                <li>
+             Manejo de repositorios
+                </li>
+              </a>
+              <a href="#repositorio" title="DESENLACE">
+                <li>
+            ¿Cómo crear un repositorio?
+                </li>
+              </a>
+              <a href="#un" title="DESENLACE">
+                <li>
+             Crear un proyecto
+                </li>
+              </a>
+              <a href="#Subir" title="DESENLACE">
+                <li>
+            Subir proyecto
+                </li>
+              </a>
+              <a href="#ajeno" title="DESENLACE">
+                <li>
+             Colaborar en un proyecto ajeno
                 </li>
               </a>
               </ul>
@@ -92,107 +156,302 @@ tutoriales.com</h1>
       </aside>
 
        <main>
-          <h2 id="DESCRIPCION">
-            DESCRIPCION
+          <h2 id="que">
+            ¿Qué es GitHub?
           </h2>
             <P>
-            In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-“The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-Using the Polyfill
-
-To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
+            GitHub es una plataforma de <span>desarrollo colaborativo de software</span> para alojar proyectos utilizando el sistema de control de versiones <a href="https://es.wikipedia.org/wiki/Git">Git</a>.
             </P>
             <figure>
-		            <img  src="img/eclipse1.png" alt="imagen" />
-		              <figcaption>Creando un proyecto</figcaption>
+		            <img  src="img/git-logo.gif" alt="imagen" />
+		              <figcaption>Logo GIT</figcaption>
 	          </figure>
+	          
+	          <div class="nota"><h5>NOTA:</h5>
+	           <p>El código se almacena de forma pública, aunque también se puede hacer de forma privada, creando una cuenta de pago.</p></div>
 
-            <h2 id="DESARROLLO">
-              DESARROLLO
+            <h2 id="para">
+              ¿Para que sirve?
             </h2>
               <P>
-              In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-  “The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-  Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-  Using the Polyfill
-
-  To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-  To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
-              </P>
+             GitHub aloja tu repositorio de código y te brinda <span>herramientas</span> muy útiles para el <span>trabajo en equipo</span>, dentro de un proyecto.
+             <br>
+             Además de eso, puedes <span>contribuir a mejorar el software de los demás</span>. Para poder alcanzar esta meta, GitHub provee de funcionalidades para hacer un <span>fork</span> y solicitar <span>pulls</span>.
+             </P>
+             	 <figure>
+  		            <img  src="img/img-github/herramienta-tee.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+             <p>
+             Realizar un <span>fork</span> es simplemente <span>clonar un repositorio ajeno</span> (genera una copia en tu cuenta), <span>para eliminar algún bug o modificar cosas de él</span>. Una vez realizadas tus modificaciones puedes enviar un <span>pull</span> al dueño del proyecto. Éste <span>podrá analizar los cambios</span> que has realizado fácilmente, y si considera interesante tu contribución, <span>adjuntarlo con el repositorio original</span>.
+             </P>
               <figure>
-  		            <img  src="img/eclipse1.png" alt="imagen" />
+  		            <img  src="img/img-github/colaboracion.png" alt="imagen" />
   		              <figcaption>Creando un proyecto</figcaption>
   	          </figure>
 
-              <h2 id="DESENLACE">
+              <h2 id="proporciona">
 
-                DESENLACE
+                ¿Qué herramientas proporciona?
               </h2>
                 <P>
-                In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-    “The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-    Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-    Using the Polyfill
-
-    To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-    To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
-                </P>
+                En la actualidad, GitHub es mucho más que un servicio de alojamiento de código. Además de éste, se ofrecen varias herramientas útiles para el <span>trabajo en equipo</span>. Entre ellas, caben destacar:
                 <figure>
-    		            <img  src="img/eclipse1.png" alt="imagen" />
+    		            <img  src="img/img-github/trabajo-en-equipo.jpg" alt="imagen" />
     		              <figcaption>Creando un proyecto</figcaption>
     	          </figure>
+                <br>
+                <ul>
+                	<li>
+                		Una <span>wiki</span> para el mantenimiento de las distintas versiones de las páginas.
+                	</li>
+                	<li>
+                		Un <span>sistema de seguimiento de problemas</span> que permiten a los miembros de tu equipo detallar un problema con tu software o una sugerencia que deseen hacer.
+                	</li>
+                	<li>
+                		Una <span>herramienta de revisión de código</span>, donde se pueden añadir anotaciones en cualquier punto de un fichero y debatir sobre determinados cambios realizados en un commit específico.
+                	</li>
+                	<li>
+                		Un <span>visor de ramas</span> donde se pueden comparar los progresos realizados en las distintas ramas de nuestro repositorio.
+                	</li>
+                </ul>
+                </P>
 
+		 <h2 id="daremos">
+             ¿Qué uso le daremos?
+            </h2>
+              <P>
+             En nuestra especialidad “Programación”, fuimos aprendiendo cosas y creando programas de código abierto, fomentando el <span>software libre</span>; es por eso que presentamos esta gran herramienta enfocada al <span>crecimiento de proyectos comunitarios</span> y libres.
+             </p>
+             	 <figure>
+  		            <img  src="img/img-github/proyecto-comunitario.jpg" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+             <p>
+             En esta página podremos <span>crear una cuenta</span> gratuita y comenzar a <span>subir repositorios</span> de código (o crearlos desde 0), para que con la ayuda de todos ese proyecto mejore; así como también <span>fortalecer</span> los <span>proyectos</span> de los demás para crecer como grupo.
+             </P>
+             
+             <h2 id="aprendiendo">
+             Aprendiendo a usar GitHub
+            </h2>
+            
+             <h2 id="crear">
+             Crear una cuenta
+            </h2>
+              <P>
+              Para crear una cuenta GitHub vamos a seguir los siguientes pasos:
+              </p>
+              <ol>
+              <li>
+              	Entrá a <a href="https://github.com/">GitHub</a>.
+              </li>
+              
+             	 <figure>
+  		            <img  src="img/img-github/github1.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+             
+             <li>
+             Hacé clic en Singnup and Pricing, de la barra de herramientas de la página.
+             </li>
+             
+              <figure>
+  		            <img  src="img/img-github/github2.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+  	          
+  	           <li>
+            Ahora en Create a free account, para una cuenta gratuita.
+             </li>
+             
+              <figure>
+  		            <img  src="img/img-github/github3.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+              <li>
+            Finalmente, solo habrá que llenar un pequeño formulario con los siguientes datos:
+             <ul>
+	             <li>
+	             Nombre de usuario.
+	             </li>
+	              <li>
+	             Dirección email.
+	             </li>
+	              <li>
+	             Contraseña.
+	             </li>
+	              <li>
+	             Confirmar contraseña.
+	             </li>
+             </ul>
+             <figure>
+  		            <img  src="img/img-github/github4.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+             </li>
+             
+             </ol>
+             
+              <h2 id="Manejo">
+             Manejo de repositorios
+            </h2>
+            
+             <h2 id="repositorio">
+             ¿Cómo crear un repositorio?
+            </h2>
+              <P>
+              Para crear un repositorio en GitHub, solo hay que seleccionar el botón <span>“Create a New Repo”</span>, de la barra de herramientas, habiendo entrado a <a href="https://github.com/">GitHub</a> con tu cuenta:
+              </p>
+                         
+             	 <figure>
+  		            <img  src="img/img-github/github5.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+  	          
+  	          <P>
+             Ahora habrá que llenar dos datos:
+             </p>
+              <ol>
+              <li>
+              	Nombre del repositorio
+              </li>
+              
+              <li>
+              	Descripción del repositorio (opcional)
+              </li>
+              </ol>
+             
+              <figure>
+  		            <img  src="img/img-github/github6.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+             
+             <P>
+           ¡Listo! Repositorio creado, ahora lo vas a poder ver en tu perfil.
+             </p>
+             
+             <h2 id="un">
+             Crear un proyecto
+            </h2>
+              <P>
+              Al crear el repositorio, inmediatamente nos va a llevar a él. Como nuestro proyecto no tiene nada en su interior, no nos va a mostrar más que una ayuda para subir archivos y proyectos.
+              <br>
+              Para crear un proyecto desde cero, habrá que comenzar creando los archivos del mismo y luego subiéndolos a la página.
+              <br>
+              En el primer recuadro de la ayuda, verás una serie de comandos para el terminal.
+               </p>
+        
+      <div class="code"> <p> touch README.md</p>
+<p>git init</p>
+<p>git add README.md</p>
+<p>git commit -m "comentario"</p>
+<p>git remote add origin https://github.com/LuchoCastillo/Repositorio.git</p>
+<p>git push -u origin master</p>
+        </div>
+        
+        <p>
+        Antes de seguirlos, tendrás que instalar git:
+        </p>
+        
+        <div class="code">
+
+<p>sudo apt-get install git</p>
+        </div>
+        
+        <h2 id="Subir">
+            Subir proyecto
+            </h2>
+            
+            <p>
+            Para subir un proyecto ya realizado a GitHub, habrá que seguir exactamente los mismos pasos, ya que para iniciar un proyecto nuevo, habrá que subir los archivos creados y luego modificarlos en el editor de la página.
+            <br>
+            En este caso, los archivos junto con su contenido, ya están hechos. Solo hay que subirlos y editarlos si surge algún inconveniente.
+            <br>
+            Para subir un archivo hay que ubicarse en la carpeta del repositorio y seguir estos pasos:
+            </p>
+        
+        <div class="code">
+
+<p>git add archivo</p>
+<p>git commit -m "comentario"</p>
+<p>git push</p>
+        </div>
+        
+        <p>Es importante realizar los 3, ya que si no se ingresa un comentario, no se realiza el cambio.
+        <br>
+        Para adquirir un poco más de práctica y conocer más comandos de git, pueden ingresar a este <a href="https://try.github.io/levels/1/challenges/1"> turorial</a> bastante práctico.
+        </p>
+        
+        <h2 id="ajeno">
+            Colaborar en un proyecto ajeno
+            </h2>
+        
+        <p>
+        Para colaborar en un proyecto ajeno simplemente basta con buscarlo dentro de los repositorios, y luego presionar el botón fork. Esto genera automaticamente una copia del mismo en tu perfil.
+        </p>
+        
+        <figure>
+  		            <img  src="img/img-github/github8.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+        
+        <p>
+        Al terminar tus modificaciones podrás presionar Pull Request para envierselo al creador del mismo.
+        </p>
+        
+        <figure>
+  		            <img  src="img/img-github/github9.png" alt="imagen" />
+  		              <figcaption>Creando un proyecto</figcaption>
+  	          </figure>
+        
         </main>
     </content>
 
     <footer>
-
-      <div id="Izquierda">
-          <a>
-              <div class="Circulo">
-                IMAGEN
-              </div>
-          </a>
-          <a>
-              <div class="Circulo">
-                IMAGEN
-              </div>
-          </a>
-          <a>
-              <div class="Circulo">
-                IMAGEN
-              </div>
-          </a>
-      </div>
-
-      <div id="Derecha">
-
-            Contacto
-        <div id="Caja">
-          <a href="mailto:fcj31@hotmail.com">Francisco de la Cruz </a>
-          <a href="mailto:franciscogonzalez_87@hotmail.com">FranciscoGonzalez </a>
-          <a href="mailto:rommelgarcia4b@gmail.com">Rommel Garcia</a>
-        </div>
-      </div>
-
-      <div id="copyright">
-           <a>“Copyright © 2017"</a>
-      </div>
-
+		<div id="arriba">
+	      <div id="Izquierda">
+	      Github
+	          <a href=" https://github.com/Frank1820" title="Francisco">
+	              <div class="Circulo">
+	              
+	              <img src="https://avatars0.githubusercontent.com/u/22357135?v=3&s=460"/>
+	                <div class="CirculoName">SuperSayajin	                		
+		              	</div>
+	              </div>
+	          </a>
+	          <a href=" https://github.com/NoisyBoy01" title="Francisco de la Cruz">
+	              <div class="Circulo">
+	             	 <img src="https://avatars0.githubusercontent.com/u/22599956?v=3&s=460/"/>
+		           		<div class="CirculoName">
+	                		NoisyBoy01
+		              	</div>
+	              </div>
+	          </a>
+	          <a href=" https://github.com/rmlgc" title="Rommel Garcia">
+	              <div class="Circulo">
+	             	<img src="https://avatars3.githubusercontent.com/u/22599950?v=3&s=460"/>
+	               		<div class="CirculoName">
+	                		rmlgc
+		              	</div>
+	              </div>
+	          </a>
+	      </div>
+	
+	      <div id="Derecha">
+		
+	            Contacto
+	        <div id="Caja">
+	          <a href="mailto:fcj31@hotmail.com">Francisco de la Cruz </a>
+	          <a href="mailto:franciscogonzalez_87@hotmail.com">FranciscoGonzalez </a>
+	          <a href="mailto:rommelgarcia4b@gmail.com">Rommel Garcia</a>
+	        </div>
+	      </div>
+		</div>
+		<div id="abajo">
+	      <div id="copyright">
+	           <p>todas la imagenes de la pagina han sido obtenidas de internet | Copyright © 2017 |themplate design by <a href=" https://github.com/Frank1820" title="Francisco">Frank1820</a> - <a href=" https://github.com/NoisyBoy01" title="Francisco de la Cruz">NoisyBoy01</a> - <a href=" https://github.com/rmlgc" title="Rommel Garcia"> rmlgc</a> </p>
+	      </div>
+		</div>
 	  </footer>
 
 

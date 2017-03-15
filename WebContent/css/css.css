@@ -7,12 +7,19 @@
 *{box-sizing:border-box} /*Para que sea fijo
  * el margen ejemplo 600px y no mas.
  */
+html,body{
+ margin:0px;
+	padding:0px;
+}
 body{
-	font-family:sans;/*poner tipo de letra BARRIO !cambiar el tipo de letra en este caso se aplicaria a toda la pagina porque esta en el body 
+	font-family:Lato;/*poner tipo de letra BARRIO !cambiar el tipo de letra en este caso se aplicaria a toda la pagina porque esta en el body 
 	 * 
 	 * 
 	 */
+<<<<<<< HEAD
 	 margin:0px;
+=======
+>>>>>>> refs/heads/localRommel
 	background-color: #fefefe;
 }
 header{
@@ -41,6 +48,10 @@ header > h1{
 	display:flex;
 	flex:0.6;
 	min-width:450px;
+<<<<<<< HEAD
+=======
+	max-width:450px;	
+>>>>>>> refs/heads/localRommel
 	align-items:center;
 }
 
@@ -58,11 +69,13 @@ nav{
 		height:200px;
 		padding:0;/*se necesita si no
 		 * se va a un lado las cosas
-		 */
-		 
+		 */		
+}
+
+nav > ul{
 	
-		
-		
+	
+	
 }
 
 #Logo{
@@ -213,11 +226,17 @@ margin: 30px 0px 10px 30px;
 
 
 
+<<<<<<< HEAD
 
 
 
 
  #git{
+=======
+  }
+    
+  #git{
+>>>>>>> refs/heads/localRommel
   background: rgba(248,80,50,0);
 background: -moz-linear-gradient(left, rgba(248,80,50,0) 30%, rgba(248,80,50,0.9) 51%, rgba(248,80,50,0.92) 55%, rgba(241,111,92,1) 70%, rgba(240,47,23,1) 90%, rgba(231,56,39,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(30%, rgba(248,80,50,0)), color-stop(51%, rgba(248,80,50,0.9)), color-stop(55%, rgba(248,80,50,0.92)), color-stop(70%, rgba(241,111,92,1)), color-stop(90%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
@@ -242,7 +261,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 aside #navAside{
     position: sticky;
     top: 19%;
+<<<<<<< HEAD
     height: 450px;
+=======
+    height: 666px;
+>>>>>>> refs/heads/localRommel
 	width:100%;
   }
 
@@ -283,7 +306,11 @@ main{
     main p{
       display:block;
       padding: 0px 20px 0px 30px;
+<<<<<<< HEAD
       font-family:Lato;
+=======
+      
+>>>>>>> refs/heads/localRommel
 
     }
 
@@ -306,6 +333,98 @@ main{
     figcaption{
       text-align: center;
     }
+    
+    ol figure{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 400px;
+    max-width: 500px;
+    }
+
+.nota{
+	margin:auto;
+		width:30%;
+	 box-shadow: 1px 1px 20px 1px;
+	}
+
+.nota h5{
+	background-color: lightblue;
+    padding: 5px;
+    margin: 0px;
+}
+.nota p{
+    padding: 0px 10px;
+    margin: 5px;
+}
+
+.code{
+	font-family:'Source Code Pro';
+	border:1px solid #ccc ;
+	
+}
+
+
+/***********************ROMMEL TARGET*******************************/
+:target{
+	
+	animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 5s ; /* Chrome and Safari */
+}
+
+    @keyframes colorchange
+    {
+      0%   {border-bottom: 1px solid red;
+      	 margin: 30px 0px 0px 30px;
+      	display:block;
+      	
+      		color:red;
+      	font-size:30px;
+      }
+      25%  {border-bottom: 1px solid purple;
+      	color:purple;
+      	font-size:none;
+      }
+      50%  {border-bottom: 1px solid  blue;
+      	color:blue;
+      }
+      75%  {border-bottom: 1px solid  green;
+      	color:green;
+      }
+      100% {border-bottom: 1px solid  red;
+      	 margin: 30px 0px 10px 30px;
+      	color:red;
+      }
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {border-bottom: 1px solid  red;
+      	 margin: 30px 0px 0px 30px;
+      	display:block;
+      	
+      	color:red;
+      	font-size:3em;
+      }
+      25%  {border-bottom: 1px solid  Purple;
+      	color:purple;
+      }
+      50%  {border-bottom: 1px solid  blue;
+      	color:blue;
+      }
+      75%  {border-bottom: 1px solid green;
+      	color:green;
+      	font-size:1.5em;
+      }
+      100% {border-bottom: 1px solid  red;
+      	 margin: 30px 0px 10px 30px;
+      	color:red;
+      }
+    }
+
+/***********************ROMMEL TARGET*******************************/
+
 
 .nota{
 	margin:auto;
@@ -333,6 +452,10 @@ main{
 	flex-flow: column;
     align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
+=======
+    min-width:800px;
+>>>>>>> refs/heads/localRommel
     }
 
 #arriba{
@@ -341,29 +464,76 @@ main{
     justify-content: center;
 }
 
-      footer a:hover{
+#arriba{
+	display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+      footer #arriba a:hover{
       	text-decoration:none;
       	}
-    	footer a{
+    	footer #arriba a{
     	text-decoration:none;
     	color:black;
     	}
 
+<<<<<<< HEAD
       #Izquierda{
      display: flex;
     flex: 2;
     justify-content: space-between;
+=======
+footer p{
+font-size:x-small;	
+text-shadow:1px 0px 5px black;
+font-family:'Share Tech Mono', monospace;
+display:table;
+	margin:30px auto;
+}
+>>>>>>> refs/heads/localRommel
 
+      #Izquierda{
+     display: flex;
+    flex: 2;
+    justify-content: space-around;
+	align-items: center;
       }
 
       .Circulo{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         display: inline-block;
-        border: 1px solid;
-        border-radius: 50px;
+        border: 2px solid black;
+        border-radius: 100px;
         margin: 0px 10px;
-
+		overflow:hidden;
+      }
+      
+      .Circulo img{
+      width: 100%
+      }
+      
+        .CirculoName{
+        
+        display: none;
+        }
+      
+      .Circulo:hover img{
+      display: none;
+      }
+      
+.Circulo:hover {
+border: 2px solid greenyellow;
+}
+      
+      .Circulo:hover .CirculoName{
+      font-family:'Fugaz One';
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(230,230,230,0.8);
       }
       
         .CirculoName:hover{
@@ -435,48 +605,20 @@ main{
  * 
  */
 
-@media screen and (max-width:1200px){
-	
-	
-header{
-		padding:10px 0px 0px 0px;
-}
-	
-	
-	nav > h1{
 
-	position: relative;
+
 
 	
 	
-}
-nav ul li, nav ul li a{
-	display:inline;
-	padding:0px 5px;
-}
-
-nav ul li img.activa{
-		display:none;
-		
-}
-nav ul .activa{
-		background-color:#e73827;
-		font-weight:bold;
-}
-
-nav ul li a:hover img{
-		display:none;
-}
-
-nav ul {
-	text-align:left;
-	width:100%;
-}
-
-nav ul li:hover ul{
 	
-	max-height:0px;
 	
+<<<<<<< HEAD
 }
+=======
+	
+	
+	
+	
+>>>>>>> refs/heads/localRommel
 
 

@@ -14,6 +14,8 @@
 
 
 
+
+
 <nav>
 <h1>
 <img  id = "Logo"src="img/F2R2.png" alt="uno" title="log"/>
@@ -71,21 +73,21 @@ tutoriales.com</h1>
       <aside>
         <nav id="navAside">
             <ul>
-              <a href="#DESCRIPCION" title="DESCRIPCION">
+              <a href="#Entrada" title="Entrada">
                 <li>
-                  DESCRIPCION
+                 Entrada
                 </li>
               </a>
 
-              <a href="#DESARROLLO" title="DESARROLLO">
+              <a href="#Instalacion" title="Instalacion">
                 <li>
-                  DESARROLLO
+                  Instalacion
                 </li>
               </a>
 
-              <a href="#DESENLACE" title="DESENLACE">
+              <a href="#Creando Repositorio y el primer commit" title="Creando Repositorio y el primer commit">
                 <li>
-                  DESENLACE
+                  Creando Repositorio y el primer commit
                 </li>
               </a>
               </ul>
@@ -93,65 +95,227 @@ tutoriales.com</h1>
       </aside>
 
        <main>
-          <h2 id="DESCRIPCION">
-            DESCRIPCION
-          </h2>
+          <h1 id="Entrada">
+       	 Entramos al mundo GIT
+          </h1>
+          
+          <h2>Que es git ? </h2>
             <P>
-            In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
+            Git es basicamente un sistema de control de versiones distribuidas que estas diseñadas para dar ayuda  a los proyectos que se crean  con una gran velocidad de respuesta y facilidad y una gran gama de configuraciones  para luego sincronizar con el git hub 
 
-“The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
+Git es libre y de codigo abierto  por lo tanto puedes hacer muchas cosas sin ningun problema ni restricciones 
 
-Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-Using the Polyfill
-
-To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
+Su facil  empleo y uso hace este sistema como uno de los mas usados y mas recomendados!
+            
             </P>
+            
+            <P>
+            Con git no se necesita un repositorio central, cada miembro de nuestro equipo tiene una copia identica de los proyectos que hemos hecho con todo su contenido ya que es muy util porque podemos trabajar con nuestro trabajo y guardarlo en nuestro repositorio local para no tener problemas en el futuro y hacer todos los cambios que queramos y en cualquier momento podemos hacer una copia de nuestro trabajo y enviarsela a nuestros demas compañeros o viceversa  y luego subirlo finalmente al git 
+            
+            </P>
+            
+            
             <figure>
 		            <img  src="img/eclipse1.png" alt="imagen" />
 		              <figcaption>Creando un proyecto</figcaption>
 	          </figure>
 
-            <h2 id="DESARROLLO">
-              DESARROLLO
-            </h2>
-              <P>
-              In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
 
-  “The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
 
-  Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
 
-  Using the Polyfill
 
-  To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
 
-  To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
-              </P>
+
+
+
+
+
+
+
+
+
+
+            <h1 id="Instalacion">
+              Instalacion
+            </h1>
+            
+           <P>Vamos a la consola y  ponemos $ sudo apt-get install git y le damos a aceptar.
+		 </P>
+              
+          <P>Ahora para saber si se ha instalado y la version que tiene  $ git --version
+        </P>
+              
+              
+              
               <figure>
   		            <img  src="img/eclipse1.png" alt="imagen" />
   		              <figcaption>Creando un proyecto</figcaption>
   	          </figure>
-
-              <h2 id="DESENLACE">
-
-                DESENLACE
-              </h2>
+  	          
+  	          
+  	          <H1>Configuracion </H1>
+  	          
+  	          <P>Para introducir datos manualmente como el nombre y el correo electronico
+  	        </P>
+  	        
+  	         <P>
+  	         	git config --global user.name<El nombre que queramos>
+  	        </P>
+  	        	
+  	        <P>Para poner el correo electronico
+  	      </P>
+  	          
+  	          <P>
+  	        	$ git config --global user.email<tu email>  
+  	        </P>
+  	          
+  	        <P>Puedes comprobar como ha quedado los datos que hemos introducido
+  	      </P>
+  	       
+  	       <P>
+  	      		 $ git config --global --list
+  	     </P>   
+  	          
+  	          
+  	        <H1>AYUDA</H1>
+  	        
+  	        <P>Si necesitas ayuda o quieres saber cuales son los comandos y que hacen cada uno
+			tenemos el comando
+  	        </P>
+  	       <P>
+  	       		$ git help 
+  	      </P>
+  	          
+  	          
+  	          
+  	          
+  	          
+  	          
+  	          
+  	          
+  	          
+              <h1 id="Creando Repositorio y el primer commit">
+				Creando Repositorio y el primer commit
+              </h1>
+              
+                <P>Para  comenzar  con git lo que tenemos que crear es una carpeta .git qye es donde tendremos todos los datos etc de git 
+              </P>
+                
                 <P>
-                In Chrome 28, as it switched to Blink engine, Chrome decided to remove the sticky position from its code-base, and it even removed the option to enable it through the chrome://flags page. The reason being:
-
-    “The current implementation of position sticky in Blink does not integrate correctly with compositing or scrolling. We eventually want to implement position sticky, but the current implementation is getting the way of work to improve scrolling and compositing. Once scrolling and compositing are in better shape, we can re-introduce position sticky in a way that integrates correctly with the rest of the system.
-
-    Once alternative is to apply a polyfill to simulate the effect in non-supporting browsers.
-
-    Using the Polyfill
-
-    To help out our non-supporting browsers we will be using stickyfill developed by Oleg Korsunsky. The polyfill works nicely in various circumstances. Whether the designated element has padding, margins, borders, been floated, or formed with relative units like em and percentage, the polyfill will accurately mimic the CSS sticky position behavior. And using stickyfill is equally intuitive.
-
-    To begin, grab stickyfill.js (optionally with jQuery, if you are more familiar with and prefer using jQuery for selecting elements). Link these libraries within your HTML document. Then initiate stickyfill with the designated element, as follows:
+                	$ Git init 
                 </P>
+                
+                <P>Despues de hacer un git init podemos hacer un commit
+                 para ver  el estado del repositorio con los commit 
+                </P>
+                
+                <P>Para hacer un commit hacemos 
+               </P>
+                
+                <P>
+                	$ git add . y git commit -m "AQUI VA EL TITULO QUE SE VERA EN EL COMMIT"
+              </P>
+                
+                
+                <P>Para ver el estado 
+                </P>
+                
+                <P>
+               		 $ git status
+                </P>
+                
+                <H1>Comits</H1>
+                
+                <P>Si queremos saber cuantos commits hemos hecho o si  habido un error
+              </P>
+        
+        		<P>Ponemos en la consola 
+        		</P>        
+		           
+		        <P>
+		        	$ git log
+		        </P>
+		        
+		        <P>Si queremos mas informacion
+		        </P>
+                
+                <P>
+                	$ git log --oneline --decorate  --graph 
+                </P>
+                
+                
+                
+                <H1>Clonar</H1>
+                
+                <P>Una vez que ya sabemos crear un repositorio  nuestro y hacer commit. 
+                 Vamos a clonar un repositorio de  algun colaborador nuestro porque hemos empezado un nuevo proyecto y lo ha creado el para clonar  
+                </P>
+					
+				<P> vamos a la consola y ejecutamos
+				</P>	                
+                
+                <P>
+               		$ git clone y la url de donde queremos clonar el  trabajo 
+              </P>
+                
+                
+                
+               <P>
+                Nota: podemos tener dos directorios el directorio principal que es el git(.git) y luego el directorio de trabajo(Working Directory)
+              </P>
+                
+                
+                <H1>Elimiar contenido</H1>
+                
+                <P>En caso de haber hecho un  fallo o un cambio que no querias hacer puedes eliminar los datos del commit 
+              </P>
+                
+                <P>Vamos a la consola y ejecutamos
+              </P>
+                
+                <P>
+               		$ git reset --hard
+              </P>
+                
+                
+                
+                
+                
+                
+                
+                <H1>CREAR RAMA</H1>
+                
+                <P>Vamos a crear una rama  nueva esto esta bien porque si ya hemos hecho commits estarian apuntando en la rama master pero si quieremos practicar y no tener problemas podemos hacer una rama para practicar 
+                y  asi no tener  problemas por si nos equivocamos en un futuro 
+                </P>
+                
+                <P>usamos el comando git branch  y el nombre que le queremos poner
+              </P>
+              
+              
+              <P>
+              		$ git branch ramaPrueba
+             </P>  
+                
+               <P>Para cambiarnos a la rama que hemos creado
+              </P>
+               
+               <P>
+               	$ git checkout ramaPrueba 
+             </P>
+             
+             
+             <P>nota * atajo : git checkout -b  ramaPrueba(nos crea una rama y nos lleva  a la rama creada)
+             </P>
+             
+             
+                <P>Y si hemos hecho cosas que nos importa  de la ramaPrueba y nos interesa aplicarlos basta con hacer un git merge 
+              </P>
+                
+                <P>
+                	$ git merge
+              </P>
+                
                 <figure>
     		            <img  src="img/eclipse1.png" alt="imagen" />
     		              <figcaption>Creando un proyecto</figcaption>

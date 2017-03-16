@@ -11,6 +11,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 header h1{
 font-size:50px;
 text-shadow:1px 0px 5px purple;
+ font-family:'Fugaz One';
+}
+header{
+	justify-content: center;
+    display: flex;
+}
+#topLeft{
+	display: flex;
+    
+    min-width: 450px;
+    align-items: center;
+}
+
+#topLeft>h1 {
+	font-family: 'Fugaz One', cursive;
+	font-size: 60px;
+	padding: 0px;
+	margin: 0px;
+	}
+
+#Logo{
+	width: 200px;
 }
 
 footer p{
@@ -28,7 +50,7 @@ h1{
 }
 #Slider{
 	width:80%;
-	min-height:700px;  
+	min-height:500px;  
 	margin:auto;
 	overflow:overlay;
 	border-radius:20px;
@@ -38,7 +60,7 @@ h1{
       -webkit-animation: colorchange 10s infinite; /* Chrome and Safari */
 }
 #contSlider{
-	min-height:700px;
+	min-height:500px;
 	display:flex;
 }
 .backSlider{

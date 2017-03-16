@@ -32,10 +32,30 @@
 	<img  class="activa" src="img/git_logo.png" alt="uno" title="log"/></a>
 	
 	<ul>
-		<li><a href="#Entrada">Entrada</a></li>
-		<li><a href="#Instalacion">Instalación</a></li>
-		<li><a href="#Creando Repositorio y el primer commit">Creando Repositorio y el primer commit</a></li>
-	</ul>
+              <a href="#Entrada" title="¿Que es git?">
+                <li>
+                 ¿Que es git?
+                </li>
+              </a>
+
+              <a href="#Instalacion" title="Instalacion">
+                <li>
+                  Instalación
+                </li>
+              </a>
+              <a href="#Configuracion" title="Configuración">
+                <li>
+	                 Configuración
+                </li>
+              </a>
+
+              <a href="#Creando" title="Creando Repositorio y el primer commit">
+                <li>
+                  Creando repositorio y el primer commit
+                </li>
+              </a>
+              
+              </ul>
 	</li>
 		
 	<li><a href="github.html">GitHub
@@ -43,28 +63,28 @@
 	</a>		
 	
 	<ul>
-			<a href="#que" title="DESCRIPCION">
+			<a href="github.html#que" title="DESCRIPCION">
                 <li>
                   ¿Qué es GitHub?
                 </li>
               </a>
               
-              <a href="#Manejo" title="DESENLACE">
+              <a href="github.html#Manejo" title="DESENLACE">
                 <li>
              Manejo de repositorios
                 </li>
               </a>
-              <a href="#un" title="DESENLACE">
+              <a href="github.html#un" title="DESENLACE">
                 <li>
              Crear un proyecto
                 </li>
               </a>
-              <a href="#Subir" title="DESENLACE">
+              <a href="github.html#Subir" title="DESENLACE">
                 <li>
             Subir proyecto
                 </li>
               </a>
-              <a href="#ajeno" title="DESENLACE">
+              <a href="github.html#ajeno" title="DESENLACE">
                 <li>
              Colaborar en un proyecto ajeno
                 </li>
@@ -78,11 +98,13 @@
 
 </a>
 	<ul>
-			<li><a href="#">Descripcion</a></li>
-			<li><a href="#">Desarollo</a></li>
-
-	</ul>
-	
+						<li><a href="eclipse.html#QUES">¿Que es Eclipse?</a></li>
+						<li><a href="eclipse.html#INSTAL">Instalación de la IDE Eclipse</a></li>
+						<li><a href="eclipse.html#CREANDO1">Creando un proyecto con contenido
+								web</a></li>
+						<li><a href="eclipse.html#HACIENDO">Haciendo un push</a></li>
+						<li><a href="eclipse.html#CREANDO2">Creando un archivo .gitignore</a></li>
+					</ul>
 	</li>
 
 </ul>
@@ -94,36 +116,80 @@
 
 
     <content>
-      <aside>
-        <nav id="navAside">
+      <aside id="git">
+    	<nav id="navAside">
+        
+        
+        
+        
             <ul>
-              <a href="#Entrada" title="Entrada">
+              <a href="#Entrada" title="¿Que es git?">
                 <li>
-                 Entrada
+                 ¿Que es git?
                 </li>
               </a>
 
               <a href="#Instalacion" title="Instalacion">
                 <li>
-                  Instalacion
+                  Instalación
+                </li>
+              </a>
+              <a href="#Configuracion" title="Configuración">
+                <li>
+	                 Configuración
+                </li>
+              </a>
+              
+               <a href="#Ayuda" title="Ayuda">
+                <li>
+	                Ayuda
                 </li>
               </a>
 
-              <a href="#Creando Repositorio y el primer commit" title="Creando Repositorio y el primer commit">
+              <a href="#Creando" title="Creando Repositorio y el primer commit">
                 <li>
-                  Creando Repositorio y el primer commit
+                  Creando repositorio y el primer commit
                 </li>
               </a>
+              
+               <a href="#Commits" title="Commits">
+                <li>
+	                Commits
+                </li>
+              </a>
+              
+              <a href="#Clonar" title="Clonar">
+                <li>
+	                Clonar
+                </li>
+              </a>
+              
+               <a href="#Elimiar" title="Elimiar contenido">
+                <li>
+	                Elimiar contenido
+                </li>
+              </a>
+              
+              <a href="#crear" title="Crear rama">
+                <li>
+	                Crear rama
+                </li>
+              </a>
+              
               </ul>
         </nav>
       </aside>
 
+
+
+
+
        <main>
-          <h1 id="Entrada">
+          <h1>
        	 Entramos al mundo GIT
           </h1>
           
-          <h2>Que es git ? </h2>
+          <h2 id="Entrada">¿Que es git ? </h2>
             <P>
             Git es basicamente un sistema de control de versiones distribuidas que estas diseñadas para dar ayuda  a los proyectos que se crean  con una gran velocidad de respuesta y facilidad y una gran gama de configuraciones  para luego sincronizar con el git hub 
 
@@ -139,34 +205,20 @@
             </P>
             
             
-            
+   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h1 id="Instalacion">
+            <h2 id="Instalacion">
               Instalación
-            </h1>
+            </h2>
             
            <P>Vamos a la consola y  ponemos:
 		 </P>
-		      <div class = "code"></div>
+		      <div class = "code">
 		 <P>
 		 	$ sudo apt-get install git
 		 </P>
-                 
-  	          <figure>
+              </div>   
+  	          <figure class="zoomIt" >
 		            <img  src="img/imagenes git/1 instalando git.png" alt="imagen" />
 		              <figcaption>Instalación</figcaption>
 	          </figure>
@@ -177,59 +229,60 @@
               
           <P>Ahora para saber si se ha instalado y la version que tiene 
         </P>
-              <div class = "code"></div>
+              <div class = "code">
               <P>
               	$ git --version
               </P>
-              
+              </div>
            
   	          
   	          
   	          
   	       
   	          
-  	          <H1>Configuración </H1>
+  	          <h2 id="Configuracion">
+  	          Configuración </h2>
   	          
   	          <P>Para introducir datos manualmente como el nombre y el correo electronico.
   	        </P>
-  	               <div class = "code"></div>
+  	               <div class = "code">
   	         <P>
   	         	$ git config --global user.name<El nombre que queramos>
   	        </P>
-  	        	
+  	        	</div>
   	        <P>Para poner el correo electronico:
   	      </P>
-  	              <div class = "code"></div>
+  	              <div class = "code">
   	          <P>
   	        	$ git config --global user.email<tu email>  
   	        </P>
-  	          
+  	          </div>
   	        <P>Puedes comprobar como ha quedado los datos que hemos introducido.
   	      </P>
-  	             <div class = "code"></div>
+  	             <div class = "code">
   	       <P>
   	      		 $ git config --global --list
   	     </P>   
+  	          </div>
   	          
-  	          
-  	            <figure>
+  	            <figure class="zoomIt" >
 		            <img  src="img/imagenes git/2 APARTADO CONFIGURACION CREAN NOMBRE EMAIL Y INFORMACION.png" alt="imagen" />
 		              <figcaption>Información</figcaption>
 	          </figure>
   	          
   	          
-  	        <H1>AYUDA</H1>
+  	        <h2 id="Ayuda">Ayuda</h2>
   	        
   	        <P>Si necesitas ayuda o quieres saber cuales son los comandos y que hacen cada uno
 			tenemos el comando:
   	        </P>
-  	               <div class = "code"></div>
+  	               <div class = "code">
   	        
   	       <P>
   	       		$ git help 
   	      </P>
-  	      
-  	        <figure>
+  	      </div>
+  	        <figure class="zoomIt" >
 		            <img  src="img/imagenes git/3 APARTADO AYUDA HELP.png" alt="imagen" />
 		              <figcaption>Ayuda</figcaption>
 	          </figure>
@@ -243,9 +296,9 @@
   	          
   	          
   	          
-              <h1 id="Creando Repositorio y el primer commit">
+              <h2 id="Creando">
 				Creando Repositorio y el primer commit.
-              </h1>
+              </h2>
               
                 <P>Para  comenzar  con git lo que tenemos que crear es una carpeta .git qye es donde tendremos todos los datos etc de git 
               </P>
@@ -256,8 +309,8 @@
                 	$ git init 
                 </P>
                 
-                
-                <figure>
+                </div>
+                <figure class="zoomIt" >
 		            <img  src="img/imagenes git/4 CREANDO REPOSITORIO.png" alt="imagen" />
 		              <figcaption>Creando repositorio</figcaption>
 	          </figure>
@@ -271,14 +324,15 @@
                 <P>Para hacer un commit hacemos:
                </P>
                 
-                       <div class = "code"></div>
+                       <div class = "code">
                 
                 <P>
                 	$ git add . y git commit -m "AQUI VA EL TITULO QUE SE VERA EN EL COMMIT"
               </P>
               
+              </div>
               
-                  <figure>
+                  <figure class="zoomIt" >
 		            <img  src="img/imagenes git/4BARRA 2 HACIENDO NUESTRO PRIMER COMMIT.png" alt="imagen" />
 		              <figcaption>Nuestro primer commit</figcaption>
 	          </figure>
@@ -287,13 +341,13 @@
                 <P>Para ver el estado:
                 </P>
                 
-                       <div class = "code"></div>
+                       <div class = "code">
                 
                 <P>
                		 $ git status
                 </P>
-                
-                 <figure>
+                </div>
+                 <figure class="zoomIt" >
                 <img  src="img/imagenes git/4 BARRA 3 HACIENDO UN GIT STATUS.png" alt="imagen" />
 		              <figcaption>Estado</figcaption>
                 </figure>
@@ -301,7 +355,7 @@
                 
                 
                 
-                <H1>Comits</H1>
+                <h2 id="Commits">Commits</h2>
                 
                 <P>Si queremos saber cuantos commits hemos hecho o si  habido un error.
               </P>
@@ -309,29 +363,30 @@
         		<P>Ponemos en la consola:
         		</P>        
 		           
-		              <div class = "code"></div>
+		              <div class = "code">
 		           
 		        <P>
 		        	$ git log
 		        </P>
-		        
+		        </div>
+		        </div>
 		        <P>Si queremos mas informacion:
 		        </P>
                 
-                       <div class = "code"></div>
+                       <div class = "code">
                 
                 <P>
                 	$ git log --oneline --decorate  --graph 
                 </P>
-                
-                 <figure>
+                </div>
+                 <figure class="zoomIt" >
                  
                  <img  src="img/imagenes git/5 APARTADO COMMITS HECHOS.png" alt="imagen" />
 		              <figcaption>Información  de los commits que hemos hecho</figcaption>
                  </figure>
                 
                 
-                <H1>Clonar</H1>
+                <h2 id="Clonar">Clonar</h2>
                 
                 <P>Una vez que ya sabemos crear un repositorio  nuestro y hacer commit. 
                  Vamos a clonar un repositorio de  algun colaborador nuestro porque hemos empezado un nuevo proyecto y lo ha creado el para clonar.  
@@ -340,24 +395,25 @@
 				<P> Vamos a la consola y ejecutamos:
 				</P>	                
                 
-                        <div class = "code"></div>
+                        <div class = "code">
                 
                 <P>
                		$ git clone y la url de donde queremos clonar el  trabajo. 
               </P>
-              
-                 <figure>
+              </div>
+                 <figure class="zoomIt" >
                  
                  <img  src="img/imagenes git/6 CLONAR.png" alt="imagen" />
 		              <figcaption>Clonar</figcaption>
                  </figure>
                  
+               <div class="nota"><h5>NOTA:</h5>
                <P>
-                Nota: Podemos tener dos directorios el directorio principal que es el git(.git) y luego el directorio de trabajo(Working Directory)
+               Podemos tener dos directorios el directorio principal que es el git(.git) y luego el directorio de trabajo(Working Directory)
               </P>
+                </div>
                 
-                
-                <H1>Elimiar contenido</H1>
+                <h2 id="Elimiar">Elimiar contenido</h2>
                 
                 <P>En caso de haber hecho un  fallo o un cambio que no querias hacer puedes eliminar los datos del commit. 
               </P>
@@ -365,20 +421,20 @@
                 <P>Vamos a la consola y ejecutamos:
               </P>
                 
-                       <div class = "code"></div>
+                       <div class = "code">
                 
                 <P>
                		$ git reset --hard
               </P>
-                
-                <figure>
+                </div>
+                <figure class="zoomIt" >
                  <img  src="img/imagenes git/7 BORRANDO.png" alt="imagen" />
 		              <figcaption>Borrar</figcaption>
                 
                 </figure>
                 
                 
-                <H1>CREAR RAMA</H1>
+                <h2 id="crear">Crear rama</h2>
                 
                 <P>Vamos a crear una rama  nueva esto esta bien porque si ya hemos hecho commits estarian apuntando en la rama master pero si quieremos practicar y no tener problemas podemos hacer una rama para practicar 
                 y  asi no tener  problemas por si nos equivocamos en un futuro. 
@@ -387,26 +443,27 @@
                 <P>Usamos el comando git branch  y el nombre que le queremos poner:
               </P>
               
-                       <div class = "code"></div>
+                       <div class = "code">
               
               <P>
               		$ git branch ramaPrueba
              </P>  
-                
+                </div>
                <P>Para cambiarnos a la rama que hemos creado:
               </P>
                
-                        <div class = "code"></div>
+                        <div class = "code">
                
                <P>
                		$ git checkout ramaPrueba 
              </P>
+             </div>
              
-             
-             <P>Nota *  git checkout -b  ramaPrueba(nos crea una rama y nos lleva  a la rama creada).
+             <div class="nota"><h5>NOTA:</h5>
+             <p> *  git checkout -b  ramaPrueba(nos crea una rama y nos lleva  a la rama creada).
              </P>
-             
-                <figure>
+             </div>
+                <figure class="zoomIt" >
     		            <img  src="img/imagenes git/8 GIT CHECKOUT .png" alt="imagen" />
     		              <figcaption>Creando rama</figcaption>
     	          </figure>
@@ -415,18 +472,53 @@
                 <P>Y si hemos hecho cosas que nos importa  de la ramaPrueba y nos interesa aplicarlos basta con hacer un git merge.
               </P>
               
-                        <div class = "code"></div>
+                        <div class = "code">
                 
                 <P>
                 	$ git merge
               </P>
-                
-                 <figure>
+                </div>
+                 <figure class="zoomIt" >
     		            <img  src="img/imagenes git/9 GIT MERGE.png" alt="imagen" />
     		              <figcaption>Aplicando los cambios</figcaption>
     	          </figure>
 
         </main>
+        <div id="asidederecha">
+
+		<table
+			style="margin: 0 0 100px 0; width: 244px; background: #fff; border: 1px solid #F3F3F3;"
+			cellspacing="0" cellpadding="0">
+			<tr>
+				<td
+					style="font-family: verdana; font-size: 11px; color: #000; padding: 5px 5px;"><object
+						classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+						codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
+						width="420" height="345">
+						<param name="movie"
+							value="http://www.games68.com/games/570ceac150b02.swf">
+						<param name="quality" value="high"></param>
+						<param name="menu" value="false"></param>
+						<embed src="http://www.games68.com/games/570ceac150b02.swf"
+							width="420" height="345" quality="high"
+							pluginspage="http://www.macromedia.com/go/getflashplayer"
+							type="application/x-shockwave-flash" menu="false"></embed>
+					</object></td>
+			</tr>
+			<tr>
+				<td
+					style="font-family: verdana; font-size: 11px; padding: 5px 10px; border-top: 1px solid #F3F3F3;"
+					align="center"><strong><a
+						href="http://www.games68.com/games.php?id=5000072" target="_blank">Flash-Cycle
+							2</a></strong> | <a href="http://www.games68.com">Play</a> con <a
+					href="http://www.games68.com" title="Games with Games68.com">Games68.com</a></td>
+			</tr>
+		</table>
+		<img
+			src="https://tpc.googlesyndication.com/simgad/12134736049129613504"
+			border="0" width="300" height="600" alt="" class="img_ad">
+
+	</div>
     </content>
 
     <footer>

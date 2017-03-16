@@ -29,11 +29,31 @@
 	<li><a href="git.html">Git
 	<img src="img/git_logo.png" alt="uno" title="log"/></a>
 	
-	<ul>
-		<li><a href="#">Descripción</a></li>
-		<li><a href="#">Desarollo</a></li>
-			
-	</ul>
+<ul>
+              <a href="git.html#Entrada" title="¿Que es git?">
+                <li>
+                 ¿Que es git?
+                </li>
+              </a>
+
+              <a href="git.html#Instalacion" title="Instalacion">
+                <li>
+                  Instalación
+                </li>
+              </a>
+              <a href="git.html#Configuracion" title="Configuración">
+                <li>
+	                 Configuración
+                </li>
+              </a>
+
+              <a href="git.html#Creando" title="Creando Repositorio y el primer commit">
+                <li>
+                  Creando repositorio y el primer commit
+                </li>
+              </a>
+              
+              </ul>
 	</li>
 		
 	<li class="activa" ><a href="github.html">GitHub
@@ -41,28 +61,28 @@
 	</a>		
 	
 	<ul>
-			<a href="#que" title="DESCRIPCION">
+			<a href="github.html#que" title="DESCRIPCION">
                 <li>
                   ¿Qué es GitHub?
                 </li>
               </a>
               
-              <a href="#Manejo" title="DESENLACE">
+              <a href="github.html#Manejo" title="DESENLACE">
                 <li>
              Manejo de repositorios
                 </li>
               </a>
-              <a href="#un" title="DESENLACE">
+              <a href="github.html#un" title="DESENLACE">
                 <li>
              Crear un proyecto
                 </li>
               </a>
-              <a href="#Subir" title="DESENLACE">
+              <a href="github.html#Subir" title="DESENLACE">
                 <li>
             Subir proyecto
                 </li>
               </a>
-              <a href="#ajeno" title="DESENLACE">
+              <a href="github.html#ajeno" title="DESENLACE">
                 <li>
              Colaborar en un proyecto ajeno
                 </li>
@@ -75,10 +95,13 @@
 		<img  src="img/eclipse-200x200.png" alt="uno" title="log"/>
 </a>
 	<ul>
-			<li><a href="#">Descripcion</a></li>
-			<li><a href="#">Desarollo</a></li>
-
-	</ul>
+						<li><a href="eclipse.html#QUES">¿Que es Eclipse?</a></li>
+						<li><a href="eclipse.html#INSTAL">Instalación de la IDE Eclipse</a></li>
+						<li><a href="eclipse.html#CREANDO1">Creando un proyecto con contenido
+								web</a></li>
+						<li><a href="eclipse.html#HACIENDO">Haciendo un push</a></li>
+						<li><a href="eclipse.html#CREANDO2">Creando un archivo .gitignore</a></li>
+					</ul>
 	
 	</li>
 
@@ -162,13 +185,13 @@
             <P>
             GitHub es una plataforma de <span>desarrollo colaborativo de software</span> para alojar proyectos utilizando el sistema de control de versiones <a href="https://es.wikipedia.org/wiki/Git">Git</a>.
             </P>
-            <figure>
+            
 		            <img  src="img/git-logo.gif" alt="imagen" />
-		              <figcaption>Logo GIT</figcaption>
-	          </figure>
+		      
 	          
 	          <div class="nota"><h5>NOTA:</h5>
-	           <p>El código se almacena de forma pública, aunque también se puede hacer de forma privada, creando una cuenta de pago.</p></div>
+	           <p>El código se almacena de forma pública, aunque también se puede hacer de forma privada, creando una cuenta de pago.</p>
+	           </div>
 
             <h2 id="para">
               ¿Para que sirve?
@@ -178,16 +201,16 @@
              <br>
              Además de eso, puedes <span>contribuir a mejorar el software de los demás</span>. Para poder alcanzar esta meta, GitHub provee de funcionalidades para hacer un <span>fork</span> y solicitar <span>pulls</span>.
              </P>
-             	 <figure>
+             	 <figure class="zoomIt" >
   		            <img  src="img/img-github/herramienta-tee.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
              <p>
              Realizar un <span>fork</span> es simplemente <span>clonar un repositorio ajeno</span> (genera una copia en tu cuenta), <span>para eliminar algún bug o modificar cosas de él</span>. Una vez realizadas tus modificaciones puedes enviar un <span>pull</span> al dueño del proyecto. Éste <span>podrá analizar los cambios</span> que has realizado fácilmente, y si considera interesante tu contribución, <span>adjuntarlo con el repositorio original</span>.
              </P>
-              <figure>
+              <figure class="zoomIt" >
   		            <img  src="img/img-github/colaboracion.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
 
               <h2 id="proporciona">
@@ -196,9 +219,9 @@
               </h2>
                 <P>
                 En la actualidad, GitHub es mucho más que un servicio de alojamiento de código. Además de éste, se ofrecen varias herramientas útiles para el <span>trabajo en equipo</span>. Entre ellas, caben destacar:
-                <figure>
+                <figure class="zoomIt" >
     		            <img  src="img/img-github/trabajo-en-equipo.jpg" alt="imagen" />
-    		              <figcaption>Creando un proyecto</figcaption>
+    		              <figcaption></figcaption>
     	          </figure>
                 <br>
                 <ul>
@@ -223,9 +246,9 @@
               <P>
              En nuestra especialidad “Programación”, fuimos aprendiendo cosas y creando programas de código abierto, fomentando el <span>software libre</span>; es por eso que presentamos esta gran herramienta enfocada al <span>crecimiento de proyectos comunitarios</span> y libres.
              </p>
-             	 <figure>
+             	 <figure class="zoomIt" >
   		            <img  src="img/img-github/proyecto-comunitario.jpg" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
              <p>
              En esta página podremos <span>crear una cuenta</span> gratuita y comenzar a <span>subir repositorios</span> de código (o crearlos desde 0), para que con la ayuda de todos ese proyecto mejore; así como también <span>fortalecer</span> los <span>proyectos</span> de los demás para crecer como grupo.
@@ -246,27 +269,27 @@
               	Entrá a <a href="https://github.com/">GitHub</a>.
               </li>
               
-             	 <figure>
+             	 <figure class="zoomIt" >
   		            <img  src="img/img-github/github1.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
              
              <li>
              Hacé clic en Singnup and Pricing, de la barra de herramientas de la página.
              </li>
              
-              <figure>
+              <figure class="zoomIt" >
   		            <img  src="img/img-github/github2.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
   	          
   	           <li>
             Ahora en Create a free account, para una cuenta gratuita.
              </li>
              
-              <figure>
+              <figure class="zoomIt" >
   		            <img  src="img/img-github/github3.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
               <li>
             Finalmente, solo habrá que llenar un pequeño formulario con los siguientes datos:
@@ -284,9 +307,9 @@
 	             Confirmar contraseña.
 	             </li>
              </ul>
-             <figure>
+             <figure class="zoomIt" >
   		            <img  src="img/img-github/github4.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
              </li>
              
@@ -303,9 +326,9 @@
               Para crear un repositorio en GitHub, solo hay que seleccionar el botón <span>“Create a New Repo”</span>, de la barra de herramientas, habiendo entrado a <a href="https://github.com/">GitHub</a> con tu cuenta:
               </p>
                          
-             	 <figure>
+             	 <figure class="zoomIt" >
   		            <img  src="img/img-github/github5.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
   	          
   	          <P>
@@ -321,9 +344,9 @@
               </li>
               </ol>
              
-              <figure>
+              <figure class="zoomIt" >
   		            <img  src="img/img-github/github6.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
              
              <P>
@@ -390,21 +413,56 @@
         Para colaborar en un proyecto ajeno simplemente basta con buscarlo dentro de los repositorios, y luego presionar el botón fork. Esto genera automaticamente una copia del mismo en tu perfil.
         </p>
         
-        <figure>
+        <figure class="zoomIt" >
   		            <img  src="img/img-github/github8.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
         
         <p>
         Al terminar tus modificaciones podrás presionar Pull Request para envierselo al creador del mismo.
         </p>
         
-        <figure>
+        <figure class="zoomIt" >
   		            <img  src="img/img-github/github9.png" alt="imagen" />
-  		              <figcaption>Creando un proyecto</figcaption>
+  		              <figcaption></figcaption>
   	          </figure>
         
         </main>
+        <div id="asidederecha">
+
+		<table
+			style="margin: 0 0 100px 0; width: 244px; background: #fff; border: 1px solid #F3F3F3;"
+			cellspacing="0" cellpadding="0">
+			<tr>
+				<td
+					style="font-family: verdana; font-size: 11px; color: #000; padding: 5px 5px;"><object
+						classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+						codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
+						width="420" height="345">
+						<param name="movie"
+							value="http://www.games68.com/games/570ceac150b02.swf">
+						<param name="quality" value="high"></param>
+						<param name="menu" value="false"></param>
+						<embed src="http://www.games68.com/games/570ceac150b02.swf"
+							width="420" height="345" quality="high"
+							pluginspage="http://www.macromedia.com/go/getflashplayer"
+							type="application/x-shockwave-flash" menu="false"></embed>
+					</object></td>
+			</tr>
+			<tr>
+				<td
+					style="font-family: verdana; font-size: 11px; padding: 5px 10px; border-top: 1px solid #F3F3F3;"
+					align="center"><strong><a
+						href="http://www.games68.com/games.php?id=5000072" target="_blank">Flash-Cycle
+							2</a></strong> | <a href="http://www.games68.com">Play</a> con <a
+					href="http://www.games68.com" title="Games with Games68.com">Games68.com</a></td>
+			</tr>
+		</table>
+		<img
+			src="https://tpc.googlesyndication.com/simgad/12134736049129613504"
+			border="0" width="300" height="600" alt="" class="img_ad">
+
+	</div>
     </content>
 
     <footer>
